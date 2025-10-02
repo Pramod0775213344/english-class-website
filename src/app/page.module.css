@@ -290,6 +290,7 @@ a.secondary {
 
 .coursediv {
   text-align: center;
+
 }
 
 .subtitle {
@@ -324,12 +325,68 @@ a.secondary {
 .courseCard{
   margin-top: 50px;
   width: 600px;
-  height: 600px;
-  background-color: #aaa4a419;
+  height: 770px;
+  background-color: #aaa4a42e;
 
 }
 
-.mainCourseCardDiv {
+.courseImage {
+  border-top-right-radius: 30px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.courseImage2{
+  border-top-left-radius: 30px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.courseCard h3{
+  color: #fff;
+  padding:10px 30px;
+  font-weight: 700;
+  font-size: 21px;
+  
+}
+
+.courseCard p{
+  color: #AAA4A4;
+  padding:0 30px ;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.courseCard p span{
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 20px;
+  
+}
+
+.courseButton{
+  color: #fff;
+  background-color: #D09922;
+  width: 551px;
+  height: 44px;
+  border-radius: 8;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  margin:30px 20px;
+}
+
+.classesTitle {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 80px;
+}
+
+.mainClassCardDiv {
   margin: 100px;
   border-radius: 30px;
   padding: 100px;
@@ -339,9 +396,55 @@ a.secondary {
 
 .classCards {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;  /* two equal columns */
   gap: 30px;
   margin-top: 50px;
   color: #fff;
+}
+.classCard{
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.assessmentDetailsDiv{
+  margin: 100px;
+  border-radius: 30px;
+  padding: 100px;
+  background-color: #aaa4a422;
+}
+
+.assessmentDetailsDiv h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.assessmentDetailsDiv p {
+  color: #AAA4A4;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 30px;
+  width: 800px;
+  margin: auto
+}
+
+.assessmentButton{
+  color: #fff;
+  background-color: #000000;
+  width: 281px;
+  height: 64px;
+  border-radius: 8;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  display: block;
+  margin:50px auto 0 auto;
 }
