@@ -165,3 +165,183 @@ a.secondary {
     filter: invert();
   }
 }
+
+/* navbar */
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 90px;
+
+}
+
+.navLinks {
+  display: flex;
+  columns: 2;
+  gap: 48px;
+  justify-content: center;
+  text-decoration: none;
+
+
+}
+
+.navLinks div {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+
+}
+
+.navLinks div:hover {
+  color: #D09922;
+
+}
+
+.enrollnow {
+  background-color: #D09922;
+  padding: 14px 24px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 8px;
+  width: 130px;
+  height: 52px;
+  border: none;
+
+}
+
+.title {
+  color: #fff;
+  font-size: 66px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+
+
+}
+
+.title2 {
+  color: #D09922;
+  font-size: 66px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.paragraph p {
+  width: 520px;
+  text-align: center;
+  line-height: 140%;
+  height: 113px;
+  color: #AAA4A4;
+  font-weight: 700;
+}
+
+.buttonDiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 40px;
+}
+
+.startButton {
+  color: #fff;
+  background-color: #D09922;
+  width: 281px;
+  height: 64px;
+  border-radius: 8;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+.exploreButton {
+  color: #D09922;
+  border-color: #D09922;
+  background-color: #000000;
+  width: 281px;
+  height: 64px;
+  border-radius: 8;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.detaislDiv {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.detaislDiv h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.coursediv {
+  text-align: center;
+}
+
+.subtitle {
+
+  background-color: #ffffff29;
+  color: #fff;
+  padding: 12px;
+  margin: 0 710px;
+  border-radius: 30px;
+  font-size: 24;
+  margin-bottom: 25px;
+}
+
+.coursediv h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.coursediv p {
+
+  font-size: 16px;
+  color: #AAA4A4;
+  margin: 20px 410px;
+}
+
+.courseCards{
+  display: flex;
+  justify-content: space-around;
+}
+
+.courseCard{
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  background-color: #aaa4a419;
+
+}
+
+.mainCourseCardDiv {
+  margin: 100px;
+  border-radius: 30px;
+  padding: 100px;
+  background-color: #aaa4a422;
+
+}
+
+.classCards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;  /* two equal columns */
+  gap: 30px;
+  margin-top: 50px;
+  color: #fff;
+}
