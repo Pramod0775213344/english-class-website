@@ -1,6 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faSun, faCircle, faCalendar, faClock, faMap, faMessage, faEnvelope, faHeadphones } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook,faLinkedin,faTwitter,faInstagram } from "@fortawesome/free-brands-svg-icons";;
 
 export default function Home() {
   return (
@@ -145,9 +149,293 @@ export default function Home() {
           <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
           <button className={styles.assessmentButton}>Get Free Assessment</button>
         </div>
-
       </section >
 
+      {/* about us section */}
+      <section style={{ marginTop: "100px" }} id="aboutus">
+        {/* about details div */}
+        <div className={styles.aboutdiv}>
+          <h4 className={styles.aboutsubtitle}>About us</h4>
+
+          <h1>Your success is our 15-year legacy</h1>
+          <p>Since our founding, we've remained committed to a single, powerful idea: that English <br></br> fluency can transform lives. We achieve this by seamlessly integrating proven teaching <br></br> methodologies with innovative technology, creating a learning experience that is both <br></br> effective and dynamic. Get ready to achieve your English excellence with a partner you<br></br> can trust..</p>
+        </div>
+
+        {/* about card div */}
+        <div className={styles.aboutCards} >
+
+          <div >
+            <Image src="/aboutus.jpg" alt="about us" width={500} height={600} className={styles.aboutImageCard} />
+          </div>
+
+          <div className={styles.aboutCard}>
+
+            <h3>
+              Our Mission
+            </h3>
+            <p>
+              To provide world-class English education that empowers students to achieve their personal and professional goals through innovative teaching methods, experienced instructors, and a supportive learning environment.
+            </p>
+
+          </div>
+
+        </div>
+
+        {/* about core values */}
+        <div className={styles.coreValueDiv}>
+          <h2>Our Core Values</h2>
+          <p>These principles guide everything we do and shape the learning<br></br> experience we create for our students.</p>
+          <div className={styles.coreValueCards}>
+            <div className={styles.coreValueCard}>
+              <div className={styles.coreIcon}>
+                <FontAwesomeIcon icon={faSun} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+              </div>
+              <h4>Results-Focused</h4>
+              <p>Every lesson is designed to help you achieve measurable progress toward your English goals.</p>
+            </div>
+            <div className={styles.coreValueCard}>
+              <div className={styles.coreIcon}>
+                <FontAwesomeIcon icon={faHeart} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+              </div>
+              <h4>Student-Centered</h4>
+              <p>We prioritize your individual learning style, pace, and objectives in every interaction.</p>
+
+            </div>
+            <div className={styles.coreValueCard}>
+              <div className={styles.coreIcon}>
+                <FontAwesomeIcon icon={faCircle} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+              </div>
+              <h4>Cultural Bridge</h4>
+              <p>Learn English while exploring global cultures and building international connections.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Teachers Detail's  */}
+      <section style={{ marginTop: "100px", backgroundColor: "#f5f5f520", padding: "50px 0" }} id="about">
+        <div className={styles.teacherDetails}>
+          <h2>Experienced & Certified Teacher</h2>
+          <p>Our instructors are native and near-native English speakers with advanced degrees in education,<br></br> linguistics, or related fields. Each teacher brings years of international teaching experience and is<br></br> certified in modern ESL methodologies.</p>
+        </div>
+
+        <div className={styles.teacherDetailsDiv}>
+          <div className={styles.teacherDetailsList}>
+            <h1>Mr.Suranga Senanayaka</h1>
+            <ul>
+              <li>Diploma & Higher Diploma in English</li>
+              <li>Diploma in Management (English Medium) - American College</li>
+              <li>Executive Course in English - University of Ruhuna</li>
+              <li>Workshop & Special Training in English</li>
+
+            </ul>
+          </div>
+          <div>
+            <Image src="/teacher.jpg" alt="teacher" width={500} height={500} className={styles.teacherImage} />
+          </div>
+        </div>
+      </section>
+
+      {/* student feedback */}
+      <section style={{ marginTop: "100px" }} id="feedback">
+        <div className={styles.feedbackDiv}>
+          <h4 className={styles.feedbackSubtitle}>Students Success Stories</h4>
+
+          <h1>Real Result From Real Students</h1>
+          <p>Join thousands of students who have transformed their lives and careers through our<br></br> English programs. Here's what they have to say.</p>
+        </div>
+
+        <div className={styles.feedbackCards}>
+
+          <div className={styles.feedbackCard}>
+            <h1>"</h1>
+            <div style={{ textAlign: "start", marginBottom: "30px" }}>
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+            </div>
+
+            <p>"The English course transformed my career. I gained confidence in presentations and now lead international meetings with ease. The teachers are incredibly supportive and knowledgeable."</p>
+
+            <hr></hr>
+
+            <div className={styles.studentDetails}>
+              <div className={styles.profileIcon} style={{ backgroundColor: "blue" }}>
+                <p>B</p>
+              </div>
+              <div className={styles.student}>
+                <h4>Brayan Perera</h4>
+                <p>Teacher</p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div className={styles.feedbackCard}>
+            <h1>"</h1>
+            <div style={{ textAlign: "start", marginBottom: "30px" }}>
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+            </div>
+
+            <p>"The English course transformed my career. I gained confidence in presentations and now lead international meetings with ease. The teachers are incredibly supportive and knowledgeable."</p>
+
+            <hr></hr>
+
+            <div className={styles.studentDetails}>
+              <div className={styles.profileIcon}>
+                <p>B</p>
+              </div>
+              <div className={styles.student}>
+                <h4>Brayan Perera</h4>
+                <p>Teacher</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div className={styles.feedbackCard}>
+            <h1>"</h1>
+            <div style={{ textAlign: "start", marginBottom: "30px" }}>
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <FontAwesomeIcon icon={faStar} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+            </div>
+
+            <p>"The English course transformed my career. I gained confidence in presentations and now lead international meetings with ease. The teachers are incredibly supportive and knowledgeable."</p>
+
+            <hr></hr>
+
+            <div className={styles.studentDetails}>
+              <div className={styles.profileIcon} style={{ backgroundColor: "red" }}>
+                <p>B</p>
+              </div>
+              <div className={styles.student}>
+                <h4>Brayan Perera</h4>
+                <p>Teacher</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* contact */}
+      <section style={{ marginTop: "100px" }} id="contact">
+        <div className={styles.contactDiv}>
+          <h4 className={styles.contactSubtitile}>Get In Touch</h4>
+
+          <h1>Start Your English Journey Today</h1>
+          <p>Ready to transform your English skills?Get in touch with our admission team for a free<br></br>
+            consultation and personalized course recommendations</p>
+        </div>
+
+        <div className={styles.contactCards}>
+          <div className={styles.contactFormCard}>
+            <div>
+              <FontAwesomeIcon icon={faMessage} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
+              <span style={{ color: "#fff", fontSize: "23px", marginLeft: "7px" }}>Send Us a Message</span>
+            </div>
+          </div>
+          <div className={styles.contactCard}>
+            <h1>Get In touch with us</h1>
+            <p>Our friendly admissions team is here to help you <br /> choose the perfect course and answer any <br /> questions about your English learning journey.</p>
+
+            <div>
+              <div className={styles.contactDetailsCard}>
+                <div className={styles.contactIcon}>
+                  <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                </div>
+                <div>
+                  <h4>Visit Our Place</h4>
+                  <ul>
+                    <li>Gampaha - SYZYGY</li>
+                    <li>Galle - SIPARA</li>
+                    <li>Morawaka - SIPONE</li>
+                    <li>Matara - DAKUNA</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.contactDetailsCard}>
+                <div className={styles.contactIcon}>
+                  <FontAwesomeIcon icon={faHeadphones} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                </div>
+                <div>
+                  <h4>Call us</h4>
+                  <ul>
+                    <li>Personal - +94 77 715 0370</li>
+                    <li>Official(SSEA) - +94 76 275 7900</li>
+                    <li>Southwind - +94 76 046 4588</li>
+
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.contactDetailsCard}>
+                <div className={styles.contactIcon}>
+                  <FontAwesomeIcon icon={faEnvelope} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                </div>
+                <div>
+                  <h4>Email us</h4>
+                  <ul>
+                    <li>surangasenanayaka337@gmail.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ======= */}
+      <section>
+        <div className={styles.footerDiv}>
+          <div className={styles.footerContent}>
+            <div className={styles.logoAndTitle}>
+              <div className={styles.footerLogo}>
+                <Image src="/logo.png" alt="Logo" width={150} height={100} />
+              </div>
+              <div>
+                <h2>Suranga Senayaka <br /> English Academy</h2>
+                 <p>Empowering students worldwide with quality English education for over 15 years. Join our global community and transform your future today.</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.footerContent}>
+            <h2>Quick Links</h2>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Courses</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div className={styles.footerContent}>
+            <h2>Visit Our Socials</h2>
+            <ul style={{ listStyle: "none" }}>
+              <li><FontAwesomeIcon icon={faFacebook} style={{ color: "#fff", height: "20px", width: "20px", marginRight: "8px" }} />Facebook</li>
+              <li><FontAwesomeIcon icon={faInstagram} style={{ color: "#fff", height: "20px", width: "20px", marginRight: "8px" }} />Instagram</li>
+              <li><FontAwesomeIcon icon={faLinkedin} style={{ color: "#fff", height: "20px", width: "20px", marginRight: "8px" }} />LinkedIn</li>
+              <li><FontAwesomeIcon icon={faTwitter} style={{ color: "#fff", height: "20px", width: "20px", marginRight: "8px" }} />Twitter</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* footer */}
+      <footer className={styles.footer}>
+        <p>© 2024 Southwind English Academy. All rights reserved.</p>
+      </footer>
 
     </>
   );

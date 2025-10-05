@@ -317,12 +317,12 @@ a.secondary {
   margin: 20px 410px;
 }
 
-.courseCards{
+.courseCards {
   display: flex;
   justify-content: space-around;
 }
 
-.courseCard{
+.courseCard {
   margin-top: 50px;
   width: 600px;
   height: 770px;
@@ -337,36 +337,36 @@ a.secondary {
   object-fit: cover;
 }
 
-.courseImage2{
+.courseImage2 {
   border-top-left-radius: 30px;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.courseCard h3{
+.courseCard h3 {
   color: #fff;
-  padding:10px 30px;
+  padding: 10px 30px;
   font-weight: 700;
   font-size: 21px;
-  
+
 }
 
-.courseCard p{
+.courseCard p {
   color: #AAA4A4;
-  padding:0 30px ;
+  padding: 0 30px;
   font-weight: 500;
   line-height: 140%;
 }
 
-.courseCard p span{
+.courseCard p span {
   color: #fff;
   font-weight: 300;
   padding: 10px 20px;
-  
+
 }
 
-.courseButton{
+.courseButton {
   color: #fff;
   background-color: #D09922;
   width: 551px;
@@ -375,7 +375,7 @@ a.secondary {
   font-weight: 600;
   font-size: 16px;
   border: none;
-  margin:30px 20px;
+  margin: 30px 20px;
 }
 
 .classesTitle {
@@ -396,12 +396,14 @@ a.secondary {
 
 .classCards {
   display: grid;
-  grid-template-columns: 1fr 1fr;  /* two equal columns */
+  grid-template-columns: 1fr 1fr;
+  /* two equal columns */
   gap: 30px;
   margin-top: 50px;
   color: #fff;
 }
-.classCard{
+
+.classCard {
   background-color: #000000;
   border-radius: 20px;
   padding: 30px;
@@ -411,7 +413,7 @@ a.secondary {
   height: 300px;
 }
 
-.assessmentDetailsDiv{
+.assessmentDetailsDiv {
   margin: 100px;
   border-radius: 30px;
   padding: 100px;
@@ -436,7 +438,7 @@ a.secondary {
   margin: auto
 }
 
-.assessmentButton{
+.assessmentButton {
   color: #fff;
   background-color: #000000;
   width: 281px;
@@ -446,5 +448,459 @@ a.secondary {
   font-size: 16px;
   border: none;
   display: block;
-  margin:50px auto 0 auto;
+  margin: 50px auto 0 auto;
+}
+
+.aboutdiv {
+  margin: 0 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.aboutsubtitle {
+  background-color: #ffffff29;
+  color: #fff;
+  padding: 12px;
+  margin: 0 510px;
+  border-radius: 30px;
+  font-size: 24;
+  margin-bottom: 25px;
+}
+
+.aboutdiv h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.aboutdiv p {
+  line-height: 140%;
+  font-size: 20px;
+  color: #AAA4A4;
+
+}
+
+.aboutCards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+}
+
+.aboutImageCard {
+  margin-top: 50px;
+  object-fit: cover;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  opacity: 0.6;
+}
+
+
+.aboutCard {
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  background-color: #aaa4a41e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+
+.aboutCard h3 {
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 40px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 25px;
+  color: #ffffffb7;
+
+}
+
+.aboutCard p {
+  width: 450px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 170%;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* core value  */
+.coreValueDiv {
+  color: #fff;
+  margin-top: 100px;
+}
+
+.coreValueDiv h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+
+}
+
+.coreValueDiv p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.coreValueCards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  text-align: center;
+  margin: 90px;
+}
+
+.coreValueCard {
+  background-color: #38383859;
+  border-radius: 50px;
+  margin: 10px 50px;
+  padding: 50px;
+
+}
+
+.coreValueCard h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.coreIcon {
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.coreIcon svg {
+  margin-top: 10px;
+}
+
+.teacherDetails {
+  margin: 0 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.teacherDetails h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.teacherDetails p {
+
+  line-height: 140%;
+  font-size: 20px;
+  color: #AAA4A4;
+  text-align: center;
+}
+
+.teacherDetailsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 150px;
+}
+
+.teacherDetailsList h1 {
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-left: 300px;
+}
+
+.teacherDetailsList ul {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 270px;
+  line-height: 150%;
+}
+
+.teacherImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 200px;
+  margin-top: -35px;
+}
+
+.feedbackDiv {
+  margin: 0 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.feedbackSubtitle {
+  color: #fff;
+  padding: 12px;
+  margin: 0 500px;
+  border-radius: 10px;
+
+}
+
+.feedbackDiv h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.feedbackDiv p {
+  line-height: 140%;
+  font-size: 20px;
+  color: #AAA4A4;
+
+}
+
+.feedbackCards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  text-align: center;
+  margin: 90px;
+}
+
+.feedbackCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #38383859;
+  border-radius: 50px;
+  margin: 10px 50px;
+  padding: 50px;
+
+}
+
+.feedbackCard h1 {
+  display: flex;
+  color: #fff;
+}
+
+.feedbackCard p {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.feedbackCard h4 {
+  margin-top: 20px;
+  display: flex;
+  color: #fff;
+}
+
+.profileIcon {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #D09922;
+  align-items: center;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.profileIcon p {
+  margin-top: 15px;
+}
+
+.studentDetails {
+  display: flex;
+
+}
+
+.student p{
+  text-align: start;
+}
+
+.contactDiv {
+  margin: 0 200px;
+  text-align: center;
+  align-items: center;
+}
+
+.contactSubtitile {
+  color: #fff;
+  padding: 12px;
+  margin: 0 500px;
+  border-radius: 10px;
+
+}
+
+.contactDiv h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.contactDiv p {
+  line-height: 140%;
+  font-size: 18px;
+  color: #AAA4A4;
+
+}
+.contactCards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  text-align: center;
+  margin: 90px;
+}
+
+.contactFormCard{
+  background-color: #38383859;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 50px;
+  width: 1000px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.contactCard{
+  color: #fff;
+  text-align: start;
+}
+.contactCard h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.contactCard p {
+  font-size: 20px;
+  color: #ffffffb7;
+  text-align: start;
+  line-height: 150%;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contactDetailsCard{
+  background-color: #ffffff13;
+  border-radius: 10px;
+  margin: 40px 0;
+  padding: 20px;
+  width: 550px;
+  height: 190px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: start;
+
+}
+
+.contactIcon {
+  background-color: #ebb30a2e;
+  border-radius: 10px;
+  margin: 40px 40px;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contactDetailsCard h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.contactDetailsCard ul{
+  font-size: 16px;
+  color: #ffffff;
+  text-align: start;
+  line-height: 150%;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 50px;
+   text-align: center;
+}
+
+.footer p{
+  color: #ffffffb7;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerDiv{
+  color: #FFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #cccccc20;
+  padding: 70px 30px;
+
+}
+
+.logoAndTitle{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logoAndTitle p{
+  font-size: 14px;
+  color: #ffffffb7;
+  text-align: start;
+  line-height: 150%;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 300px;
+}
+
+
+
+.footerContent h2{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.footerContent ul{
+line-height: 190%;
+  padding: 0;
+  margin: 0;
 }
