@@ -213,14 +213,14 @@ a.secondary {
 }
 
 .title {
+  width: 60ch;
   color: #fff;
   font-size: 66px;
   text-align: center;
   margin-bottom: 16px;
   font-weight: 700;
-
-
 }
+
 
 .title2 {
   color: #D09922;
@@ -287,6 +287,92 @@ a.secondary {
   padding: 14px 28px;
   cursor: pointer;
   transition: 0.3s ease all;
+}
+
+.englishLetter {
+  width: 100px;
+  height: 100px;
+  animation: letters 3s linear infinite;
+  opacity: 0;
+
+}
+
+@keyframes letters {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+
+  }
+
+  50% {
+
+    opacity: 0.4;
+
+  }
+
+  70% {
+
+    opacity: 0.4;
+
+  }
+
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+
+  }
+
+
+}
+
+.englishLetters img:nth-child(1) {
+  animation-delay: 1s;
+  width: 300px;
+  height: 300px;
+}
+
+.englishLetters img:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.englishLetters img:nth-child(3) {
+  animation-delay: 2.5s;
+   width: 200px;
+  height: 200px;
+}
+.englishLetters img:nth-child(4) {
+  animation-delay: 0.5s;
+   width: 150px;
+  height: 150px;
+}
+.englishLetters img:nth-child(5) {
+  animation-delay: 4.5s;
+}
+.englishLetters img:nth-child(6) {
+  animation-delay: 3s;
+}
+.englishLetters img:nth-child(7) {
+  animation-delay: 4.0s;
+   width: 50px;
+  height: 50px;
+}
+.englishLetters img:nth-child(9) {
+  animation-delay: 6.5s;
+   width: 90px;
+  height: 90px;
+}
+.englishLetters img:nth-child(10) {
+  animation-delay: 2s;
+}
+
+.englishLetters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+
+
 }
 
 .detaislDiv {
@@ -667,7 +753,7 @@ a.secondary {
   margin-bottom: 30px;
   text-align: left;
   margin-left: 0;
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -695,6 +781,7 @@ a.secondary {
   justify-self: center;
   align-items: center;
 }
+
 .feedbackDiv {
   margin: 0 200px;
   text-align: center;
@@ -952,10 +1039,14 @@ a.secondary {
   line-height: 1.5;
   font-weight: 600;
   margin-top: 10px;
-  max-width: 100%; /* prevent overflow */
-  width: auto; /* remove fixed width */
-  word-wrap: break-word; /* handle long text */
-    font-size: clamp(12px, 2vw, 14px); /* responsive font size */
+  max-width: 100%;
+  /* prevent overflow */
+  width: auto;
+  /* remove fixed width */
+  word-wrap: break-word;
+  /* handle long text */
+  font-size: clamp(12px, 2vw, 14px);
+  /* responsive font size */
 
 }
 
@@ -1159,6 +1250,7 @@ a.secondary {
 
 
 @media (max-width: 1024px) {
+
   .startButton,
   .exploreButton,
   .courseButton {
@@ -1213,6 +1305,7 @@ a.secondary {
 
 /* ---------- MOBILE (≤ 768px) ---------- */
 @media (max-width: 768px) {
+
   .startButton,
   .exploreButton,
   .courseButton {
@@ -1271,6 +1364,7 @@ a.secondary {
 
 /* ---------- SMALL PHONES (≤ 480px) ---------- */
 @media (max-width: 480px) {
+
   .startButton,
   .exploreButton,
   .courseButton {
