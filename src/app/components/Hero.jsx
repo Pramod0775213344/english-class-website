@@ -1,7 +1,4 @@
 'use client';
-
-import { useEffect, useState } from 'react';
-import Lenis from 'lenis';
 import React from 'react'
 import styles from '../page.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,28 +7,19 @@ import { faArrowRight, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Hero() {
 
-  const [lenisRef, setLenis] = useState(null);
-  const [rafState, setRaf] = useState(null);
-
-  useEffect(() => {
-    const scroller = new Lenis();
-    let rf;
-
-    function raf(time) {
-      scroller.raf(time);
-      rf = requestAnimationFrame(raf);
+  const handleClick = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
     }
-    rf = requestAnimationFrame(raf);
-    setLenis(scroller);
-    setRaf(rf);
+  };
 
-    return () => {
-      if (lenisRef) {
-        cancelAnimationFrame(rafState);
-        lenisRef.destroy();
-      }
+  const handleClickCourse = () => {
+    const coursesSection = document.getElementById('courses');
+    if (coursesSection) {
+      coursesSection.scrollIntoView({ behavior: 'smooth' });
     }
-  },[])
+  };
 
   return (
     <div>
@@ -53,8 +41,8 @@ function Hero() {
           {/* button div */}
           <div className={styles.buttonDiv}>
 
-            <button className={styles.startButton}> Start Learning today  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
-            <button className={styles.exploreButton}> <FontAwesomeIcon icon={faPlayCircle} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "29px" }} /> Explore Courses</button>
+            <button className={styles.startButton} onClick={handleClick}> Start Learning today  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+            <button className={styles.exploreButton} onClick={handleClickCourse}> <FontAwesomeIcon icon={faPlayCircle} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "29px" }} /> Explore Courses</button>
           </div>
 
           {/* details section ara */}
@@ -72,19 +60,6 @@ function Hero() {
               <p>Success Rate</p>
             </div>
           </div>
-        </div>
-
-        <div className={styles.englishLetters}>
-          <img src="/B.png" alt="B" width={600} height={400} className={styles.englishLetter} />
-          <img src="/C.png" alt="C" width={600} height={400} className={styles.englishLetter} />
-          <img src="/p.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/q.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/r.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/s.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/t.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/u.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-          <img src="/v.png" alt="D" width={600} height={400} className={styles.englishLetter} />
-
         </div>
       </section>
     </div>

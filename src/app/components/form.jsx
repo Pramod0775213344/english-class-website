@@ -28,7 +28,7 @@ export default function ContactForm() {
   };
 
   return (
-      <form className={contacFormStyles.contactform} onSubmit={handleSubmit}>
+      <form className={contacFormStyles.contactform} onSubmit={handleSubmit} id="contactForm">
         <h2>
           <span className={contacFormStyles.icon}> <FontAwesomeIcon icon={faMessage} style={{ color: "#e1bb0eff", height: "25px", width: "25px", marginRight: "5px" }} /></span> Send us a Message
         </h2>
