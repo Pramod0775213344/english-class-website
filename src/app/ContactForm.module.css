@@ -1,0 +1,107 @@
+.formcontainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.contactform {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.contactform h2 {
+  font-size: 1.8rem;
+  margin-bottom: 65px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.icon {
+  color: #f0b400;
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.formrow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.formgroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.formgroup label {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #fff;
+  text-align: start;
+  font-weight: 700;
+
+}
+
+.required {
+  color: #f44336;
+}
+
+.formgroup input,
+.formgroup select,
+.formgroup textarea {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+.formgroup input:focus,
+.formgroup select:focus,
+.formgroup textarea:focus {
+  border-color: #f0b400;
+  outline: none;
+}
+
+.formgroup textarea {
+  resize: none;
+}
+
+.sendbtn {
+  background-color: #D09922;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sendbtn:hover {
+  background-color: #ffcc00;
+}
+
+
+.contacFormStyles label{
+  display: flex;
+  justify-content: left;
+  
+}

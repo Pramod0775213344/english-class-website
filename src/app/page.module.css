@@ -262,6 +262,9 @@ a.secondary {
   font-weight: 600;
   font-size: 16px;
   border: none;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
 }
 
 .exploreButton {
@@ -273,6 +276,9 @@ a.secondary {
   border-radius: 8;
   font-weight: 600;
   font-size: 16px;
+   display: flex ;
+  justify-content: center;
+  align-items: center;
 }
 
 .detaislDiv {
@@ -374,6 +380,9 @@ a.secondary {
   border-radius: 8;
   font-weight: 600;
   font-size: 16px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
   border: none;
   margin: 30px 20px;
 }
@@ -396,8 +405,7 @@ a.secondary {
 
 .classCards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* two equal columns */
+  grid-template-columns: 1fr 1fr;  /* two equal columns */
   gap: 30px;
   margin-top: 50px;
   color: #fff;
@@ -411,6 +419,12 @@ a.secondary {
   flex-direction: column;
   justify-content: space-evenly;
   height: 300px;
+}
+
+.classCard h2 {
+display: flex;
+justify-content: start;
+align-items: center;
 }
 
 .assessmentDetailsDiv {
@@ -447,7 +461,9 @@ a.secondary {
   font-weight: 600;
   font-size: 16px;
   border: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 50px auto 0 auto;
 }
 
@@ -801,7 +817,7 @@ a.secondary {
   margin: 40px 0;
   padding: 20px;
   width: 550px;
-  height: 190px;
+  height: 176px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -837,6 +853,12 @@ a.secondary {
   text-align: start;
   line-height: 150%;
   font-weight: 800;
+}
+
+.contactFormDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
 }
 
 .footer {
@@ -903,4 +925,187 @@ a.secondary {
 line-height: 190%;
   padding: 0;
   margin: 0;
+}
+
+/* resnponsive */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .navLinks {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .detaislDiv,
+  .coreValueCards,
+  .aboutCards,
+  .feedbackCards,
+  .contactCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courseCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacherDetailsDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .courseCard,
+  .aboutCard,
+  .contactFormCard,
+  .contactDetailsCard {
+    width: 90%;
+    height: auto;
+  }
+
+  .mainClassCardDiv,
+  .assessmentDetailsDiv {
+    padding: 40px;
+    margin: 40px;
+  }
+
+  .contactFormDiv {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .title,
+  .title2 {
+    font-size: 40px;
+  }
+
+  .paragraph p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .buttonDiv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .startButton,
+  .exploreButton,
+  .assessmentButton {
+    width: 90%;
+    height: 56px;
+    font-size: 14px;
+  }
+
+  .subtitle,
+  .aboutsubtitle,
+  .contactSubtitile,
+  .feedbackSubtitle {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+
+  .coursediv p {
+    margin: 0 20px;
+  }
+
+  .aboutdiv,
+  .feedbackDiv,
+  .contactDiv {
+    margin: 0 20px;
+  }
+
+  .aboutCard p,
+  .feedbackCard p {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .contactFormCard {
+    padding: 20px;
+  }
+
+  .contactDetailsCard {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .contactIcon {
+    margin: 10px 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .teacherImage {
+    margin-left: 0;
+  }
+
+  .footerDiv {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .title,
+  .title2 {
+    font-size: 30px;
+  }
+
+  .coursediv h1 {
+    font-size: 36px;
+  }
+
+  .courseCard {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .coreValueCards,
+  .feedbackCards {
+    flex-direction: column;
+    margin: 40px 10px;
+  }
+
+  .coreValueCard,
+  .feedbackCard {
+    padding: 30px;
+    margin: 10px 0;
+  }
+
+  .contactFormCard {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .footerDiv {
+    padding: 30px 10px;
+  }
+
+  .footer p {
+    width: 90%;
+  }
 }

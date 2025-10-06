@@ -1,10 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Form from "next/form";
+import ContactForm from "./components/form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faSun, faCircle, faCalendar, faClock, faMap, faMessage, faEnvelope, faHeadphones } from "@fortawesome/free-regular-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook,faLinkedin,faTwitter,faInstagram } from "@fortawesome/free-brands-svg-icons";;
+import { faHeart, faSun, faCircle, faCalendar, faClock, faMap, faMessage, faEnvelope, faHeadphones,faPlayCircle } from "@fortawesome/free-regular-svg-icons";
+import { faStar,faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";;
 
 export default function Home() {
   return (
@@ -50,8 +52,8 @@ export default function Home() {
 
           {/* button div */}
           <div className={styles.buttonDiv}>
-            <button className={styles.startButton} > Start Learning today</button>
-            <button className={styles.exploreButton} > Explore Courses</button>
+            <button className={styles.startButton} > Start Learning today  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px",marginLeft:"29px" }} /></button>
+            <button className={styles.exploreButton} > <FontAwesomeIcon icon={faPlayCircle} style={{ color: "#e1bb0eff", height: "20px", width: "20px",marginRight:"29px" }} /> Explore Courses</button>
           </div>
 
           {/* details section ara */}
@@ -95,7 +97,7 @@ export default function Home() {
               <p style={{ marginTop: "5px" }}><span>Morawaka(Sipone) - Friday | 8.30 AM - 2.00PM</span></p>
               <p style={{ marginTop: "5px" }}><span>Matara(Dakuna) - Sunday | 8.30 AM - 2.00PM</span></p>
               <p style={{ marginTop: "5px" }}><span>Online Zoom - Mon / Wed / Fri / Sat</span></p>
-              <button className={styles.courseButton}>Enroll Now</button>
+              <button className={styles.courseButton}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px",marginLeft:"29px" }} /></button>
             </div>
 
 
@@ -108,7 +110,7 @@ export default function Home() {
               <h3>Southwind Saturday English School</h3>
               <p>Focus on Speaking, Listening, Reading, and Writing through activities, group work, and real-life practice.</p>
               <p style={{ marginTop: "25px" }}><span>Every Saturday from 8.00 AM – 6.00 PM</span></p>
-              <button className={styles.courseButton} style={{ marginTop: "143px" }}>Enroll Now</button>
+              <button className={styles.courseButton} style={{ marginTop: "143px" }}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px",marginLeft:"29px" }} /></button>
             </div>
 
           </div>
@@ -119,26 +121,50 @@ export default function Home() {
         <div className={styles.mainClassCardDiv}>
           <div className={styles.classCards}>
             <div className={styles.classCard}>
-              <h2>Gampaha - SyZyGy</h2>
-              <h2>Monday - General English 2027</h2>
-              <h2>3.30 PM - 5.30 PM</h2>
+              <h2>
+                  <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Gampaha - SyZyGy</h2>
+              <h2>
+                 <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                 Monday - General English 2027</h2>
+              <h2>
+                 <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                 3.30 PM - 5.30 PM</h2>
             </div>
             <div className={styles.classCard}>
-              <h2>Gampaha - SyZyGy</h2>
-              <h2>Tuseday - General English 2026</h2>
-              <h2>3.00 PM - 5.00 PM</h2>
+              <h2>
+                <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Gampaha - SyZyGy</h2>
+              <h2>
+                <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Tuseday - General English 2026</h2>
+              <h2>
+                <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                3.00 PM - 5.00 PM</h2>
             </div>
           </div>
           <div className={styles.classCards}>
             <div className={styles.classCard}>
-              <h2>Galle - Sipara</h2>
-              <h2>Wednesday - General English 2026/2027</h2>
-              <h2>2.30 PM - 4.30 PM</h2>
+              <h2>
+                <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Galle - Sipara</h2>
+              <h2>
+                <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Wednesday - General English 2026/2027</h2>
+              <h2>
+                <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                2.30 PM - 4.30 PM</h2>
             </div>
             <div className={styles.classCard}>
-              <h2>Online - Zoom</h2>
-              <h2>Thursday - General English 2026/2027</h2>
-              <h2>8.00 PM - 10.00 PM</h2>
+              <h2>
+                <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Online - Zoom</h2>
+              <h2>
+                <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                Thursday - General English 2026/2027</h2>
+              <h2>
+                <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff",marginRight:"29px",backgroundColor:"#e1ba0e39",padding:"15px" ,borderRadius:"15px"}} />
+                8.00 PM - 10.00 PM</h2>
             </div>
           </div>
         </div>
@@ -147,7 +173,7 @@ export default function Home() {
         <div className={styles.assessmentDetailsDiv}>
           <h1>Not sure which course is right for you?</h1>
           <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
-          <button className={styles.assessmentButton}>Get Free Assessment</button>
+          <button className={styles.assessmentButton}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px",marginLeft:"29px" }} /></button>
         </div>
       </section >
 
@@ -342,11 +368,8 @@ export default function Home() {
         </div>
 
         <div className={styles.contactCards}>
-          <div className={styles.contactFormCard}>
-            <div>
-              <FontAwesomeIcon icon={faMessage} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "5px" }} />
-              <span style={{ color: "#fff", fontSize: "23px", marginLeft: "7px" }}>Send Us a Message</span>
-            </div>
+          <div>
+              <ContactForm />
           </div>
           <div className={styles.contactCard}>
             <h1>Get In touch with us</h1>
@@ -407,7 +430,7 @@ export default function Home() {
               </div>
               <div>
                 <h2>Suranga Senayaka <br /> English Academy</h2>
-                 <p>Empowering students worldwide with quality English education for over 15 years. Join our global community and transform your future today.</p>
+                <p>Empowering students worldwide with quality English education for over 15 years. Join our global community and transform your future today.</p>
               </div>
             </div>
           </div>
