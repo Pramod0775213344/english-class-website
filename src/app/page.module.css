@@ -947,13 +947,16 @@ a.secondary {
 }
 
 .logoAndTitle p {
-  font-size: 14px;
   color: #ffffffb7;
   text-align: start;
-  line-height: 150%;
+  line-height: 1.5;
   font-weight: 600;
   margin-top: 10px;
-  width: 300px;
+  max-width: 100%; /* prevent overflow */
+  width: auto; /* remove fixed width */
+  word-wrap: break-word; /* handle long text */
+    font-size: clamp(12px, 2vw, 14px); /* responsive font size */
+
 }
 
 
@@ -1154,7 +1157,7 @@ a.secondary {
   }
 }
 
-/* ---------- BUTTONS RESPONSIVE ---------- */
+
 @media (max-width: 1024px) {
   .startButton,
   .exploreButton,
