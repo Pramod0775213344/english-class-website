@@ -15,20 +15,23 @@ import TecherSection from "./components/TecherSection";
 import FeedBack from "./components/FeedBack";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollContext from "./components/ScrollContext";
 
 
 export default function Home() {
 
   return (
     <>
-      <NavBar />
-      <Hero />
-      <Courses />
-      <About />
-      <TecherSection />
-      <FeedBack />
-      <Contact />
-      <Footer />
+      <ScrollContext>
+        <NavBar />
+        <Hero />
+        <Courses />
+        <About />
+        <TecherSection />
+        <FeedBack />
+        <Contact />
+        <Footer />
+      </ScrollContext>
     </>
   );
 }
