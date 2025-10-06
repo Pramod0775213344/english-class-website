@@ -1154,50 +1154,15 @@ a.secondary {
   }
 }
 
-/* ---------- Buttons (startButton, exploreButton, courseButton) ---------- */
-
-/* Tablet screens (≤ 1024px) */
+/* ---------- BUTTONS RESPONSIVE ---------- */
 @media (max-width: 1024px) {
-
   .startButton,
   .exploreButton,
   .courseButton {
     font-size: 15px;
     padding: 12px 24px;
   }
-}
 
-/* Mobile screens (≤ 768px) */
-@media (max-width: 768px) {
-
-  .startButton,
-  .exploreButton,
-  .courseButton {
-    width: 90%;
-    font-size: 14px;
-    padding: 14px;
-    margin: 10px auto;
-    display: block;
-  }
-}
-
-/* Small phones (≤ 480px) */
-@media (max-width: 480px) {
-
-  .startButton,
-  .exploreButton,
-  .courseButton {
-    width: 100%;
-    font-size: 13px;
-    padding: 12px;
-    margin: 8px 0;
-  }
-}
-
-/* ---------- RESPONSIVE DESIGN ---------- */
-
-/* Tablets (≤ 1024px) */
-@media (max-width: 1024px) {
   .mainClassCardDiv {
     margin: 60px;
     padding: 60px;
@@ -1205,65 +1170,9 @@ a.secondary {
 
   .classCards {
     grid-template-columns: 1fr 1fr;
-    /* still two columns */
     gap: 20px;
   }
 
-  .classCard {
-    height: auto;
-    /* let it expand with content */
-    padding: 25px;
-  }
-}
-
-/* Mobile (≤ 768px) */
-@media (max-width: 768px) {
-  .mainClassCardDiv {
-    margin: 40px 20px;
-    padding: 40px 20px;
-    border-radius: 20px;
-  }
-
-  .classCards {
-    grid-template-columns: 1fr;
-    /* one column on mobile */
-    gap: 25px;
-    margin-top: 30px;
-  }
-
-  .classCard {
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    border-radius: 16px;
-  }
-}
-
-/* Small phones (≤ 480px) */
-@media (max-width: 480px) {
-  .mainClassCardDiv {
-    margin: 20px 10px;
-    padding: 20px 10px;
-    border-radius: 15px;
-  }
-
-  .classCards {
-    gap: 15px;
-  }
-
-  .classCard {
-    padding: 15px;
-    height: auto;
-    font-size: 14px;
-  }
-
-  .classCard h2 {
-    font-size: 18px;
-  }
-}
-
-/* Tablets (≤ 1024px) */
-@media (max-width: 1024px) {
   .teacherDetails {
     margin: 0 100px;
   }
@@ -1277,19 +1186,18 @@ a.secondary {
   }
 
   .teacherDetailsDiv {
-    grid-template-columns: 1fr; /* Stack vertically */
+    grid-template-columns: 1fr;
     gap: 60px;
     margin-top: 100px;
   }
 
   .teacherDetailsList h1 {
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
   }
 
   .teacherDetailsList ul {
     font-size: 18px;
-    align-items: center;
     padding-left: 0;
   }
 
@@ -1300,8 +1208,36 @@ a.secondary {
   }
 }
 
-/* Mobile (≤ 768px) */
+/* ---------- MOBILE (≤ 768px) ---------- */
 @media (max-width: 768px) {
+  .startButton,
+  .exploreButton,
+  .courseButton {
+    width: 90%;
+    font-size: 14px;
+    padding: 14px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .mainClassCardDiv {
+    margin: 40px 20px;
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .classCards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .classCard {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
   .teacherDetails {
     margin: 0 40px;
   }
@@ -1330,8 +1266,36 @@ a.secondary {
   }
 }
 
-/* Small phones (≤ 480px) */
+/* ---------- SMALL PHONES (≤ 480px) ---------- */
 @media (max-width: 480px) {
+  .startButton,
+  .exploreButton,
+  .courseButton {
+    width: 100%;
+    font-size: 13px;
+    padding: 12px;
+    margin: 8px 0;
+  }
+
+  .mainClassCardDiv {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 15px;
+  }
+
+  .classCards {
+    gap: 15px;
+  }
+
+  .classCard {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .classCard h2 {
+    font-size: 18px;
+  }
+
   .teacherDetails {
     margin: 0 20px;
   }
