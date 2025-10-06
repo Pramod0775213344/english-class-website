@@ -245,7 +245,7 @@ export default function Home() {
       <section style={{ marginTop: "100px", backgroundColor: "#f5f5f520", padding: "50px 0" }} id="about">
         <div className={styles.teacherDetails}>
           <h2>Experienced & Certified Teacher</h2>
-          <p>Our instructors are native and near-native English speakers with advanced degrees in education,<br></br> linguistics, or related fields. Each teacher brings years of international teaching experience and is<br></br> certified in modern ESL methodologies.</p>
+          <p>Our instructors are native and near-native English speakers with advanced degrees in education, linguistics, or related fields. Each teacher brings years of international teaching experience and iscertified in modern ESL methodologies.</p>
         </div>
 
         <div className={styles.teacherDetailsDiv}>
