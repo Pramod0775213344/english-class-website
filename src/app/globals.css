@@ -42,3 +42,8 @@ a {
     color-scheme: dark;
   }
 }
+
+.animated-card-init {
+    opacity: 0;
+    transform: translateY(50px);
+}

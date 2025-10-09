@@ -3,6 +3,7 @@ import styles from '../styles/About.module.css'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faHeart, faCircle } from '@fortawesome/free-solid-svg-icons'
+import AnimatedCard from '@/app/animation/AnimatedCard';
 
 
 function About() {
@@ -20,22 +21,24 @@ function About() {
 
                 {/* about card div */}
                 <div className={styles.aboutCards} >
+                    <AnimatedCard animationType="scale">
+                        <div >
+                            <Image src="/aboutus.jpg" alt="about us" width={500} height={600} className={styles.aboutImageCard} />
+                        </div>
+                    </AnimatedCard>
 
-                    <div >
-                        <Image src="/aboutus.jpg" alt="about us" width={500} height={600} className={styles.aboutImageCard} />
-                    </div>
+                    <AnimatedCard animationType="scale">
+                        <div className={styles.aboutCard}>
 
-                    <div className={styles.aboutCard}>
+                            <h3>
+                                Our Mission
+                            </h3>
+                            <p>
+                                To provide world-class English education that empowers students to achieve their personal and professional goals through innovative teaching methods, experienced instructors, and a supportive learning environment.
+                            </p>
 
-                        <h3>
-                            Our Mission
-                        </h3>
-                        <p>
-                            To provide world-class English education that empowers students to achieve their personal and professional goals through innovative teaching methods, experienced instructors, and a supportive learning environment.
-                        </p>
-
-                    </div>
-
+                        </div>
+                    </AnimatedCard>
                 </div>
 
                 {/* about core values */}
@@ -43,29 +46,35 @@ function About() {
                     <h2>Our Core Values</h2>
                     <p>These principles guide everything we do and shape the learning<br></br> experience we create for our students.</p>
                     <div className={styles.coreValueCards}>
-                        <div className={styles.coreValueCard}>
-                            <div className={styles.coreIcon}>
-                                <FontAwesomeIcon icon={faSun} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                        <AnimatedCard animationType="rotate" delay={0.2}>
+                            <div className={styles.coreValueCard}>
+                                <div className={styles.coreIcon}>
+                                    <FontAwesomeIcon icon={faSun} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                                </div>
+                                <h4>Results-Focused</h4>
+                                <p>Every lesson is designed to help you achieve measurable progress toward your English goals.</p>
                             </div>
-                            <h4>Results-Focused</h4>
-                            <p>Every lesson is designed to help you achieve measurable progress toward your English goals.</p>
-                        </div>
-                        <div className={styles.coreValueCard}>
-                            <div className={styles.coreIcon}>
-                                <FontAwesomeIcon icon={faHeart} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
-                            </div>
-                            <h4>Student-Centered</h4>
-                            <p>We prioritize your individual learning style, pace, and objectives in every interaction.</p>
+                        </AnimatedCard>
+                        <AnimatedCard animationType="rotate" delay={0.4}>
+                            <div className={styles.coreValueCard}>
+                                <div className={styles.coreIcon}>
+                                    <FontAwesomeIcon icon={faHeart} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                                </div>
+                                <h4>Student-Centered</h4>
+                                <p>We prioritize your individual learning style, pace, and objectives in every interaction.</p>
 
-                        </div>
-                        <div className={styles.coreValueCard}>
-                            <div className={styles.coreIcon}>
-                                <FontAwesomeIcon icon={faCircle} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
                             </div>
-                            <h4>Cultural Bridge</h4>
-                            <p>Learn English while exploring global cultures and building international connections.</p>
+                        </AnimatedCard>
+                        <AnimatedCard animationType="rotate" delay={0.6}>
+                            <div className={styles.coreValueCard}>
+                                <div className={styles.coreIcon}>
+                                    <FontAwesomeIcon icon={faCircle} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
+                                </div>
+                                <h4>Cultural Bridge</h4>
+                                <p>Learn English while exploring global cultures and building international connections.</p>
 
-                        </div>
+                            </div>
+                        </AnimatedCard>
                     </div>
 
                 </div>

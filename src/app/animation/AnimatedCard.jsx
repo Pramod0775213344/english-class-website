@@ -1,42 +1,60 @@
+'use client';
 
-'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Inline AnimatedCard component
-function AnimatedCard({ children }) {
+gsap.registerPlugin(ScrollTrigger);
+
+export default function AnimatedCard({ children, delay = 0, animationType = 'fadeUp' }) {
     const cardRef = useRef(null);
 
     useEffect(() => {
         const el = cardRef.current;
         if (!el) return;
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        el.style.opacity = '1';
-                        el.style.transform = 'translateY(0)';
-                    }
-                });
+        let fromVars = { opacity: 0 };
+        let toVars = {
+            opacity: 1,
+            duration: 0.8,
+            delay,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 85%',
+                toggleActions: 'play none none reverse',
+                // markers: true,
             },
-            { threshold: 0.1 }
-        );
+        };
 
-        observer.observe(el);
+        switch (animationType) {
+            case 'fadeLeft':
+                fromVars.x = -50;
+                toVars.x = 0;
+                break;
+            case 'fadeRight':
+                fromVars.x = 50;
+                toVars.x = 0;
+                break;
+            case 'scale':
+                fromVars.scale = 0.8;
+                toVars.scale = 1;
+                break;
+            case 'rotate':
+                fromVars.rotation = -15;
+                toVars.rotation = 0;
+                break;
+            default:
+                fromVars.y = 50;
+                toVars.y = 0;
+        }
 
-        return () => observer.disconnect();
-    }, []);
+        const ctx = gsap.context(() => {
+            gsap.fromTo(el, fromVars, toVars);
+        }, el);
 
-    return (
-        <div
-            ref={cardRef}
-            style={{
-                opacity: 0,
-                transform: 'translateY(50px)',
-                transition: 'opacity 1s ease-out, transform 1s ease-out'
-            }}
-        >
-            {children}
-        </div>
-    );
+        return () => ctx.revert();
+    }, [delay, animationType]);
+
+    return <div ref={cardRef}>{children}</div>;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/FeedBack.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import AnimatedCard from "@/app/animation/AnimatedCard";
 
 
 function FeedBack() {
@@ -18,6 +19,7 @@ function FeedBack() {
 
                 <div className={styles.feedbackCards}>
 
+                    <AnimatedCard animationType="fadeUp">
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>
@@ -44,7 +46,8 @@ function FeedBack() {
 
 
                     </div>
-
+                    </AnimatedCard>
+                    <AnimatedCard animationType="fadeUp" delay={0.2}>
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>
@@ -70,7 +73,8 @@ function FeedBack() {
 
 
                     </div>
-
+                    </AnimatedCard>
+                    <AnimatedCard animationType="fadeUp" delay={0.4}>
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>
@@ -95,6 +99,7 @@ function FeedBack() {
                         </div>
 
                     </div>
+                    </AnimatedCard>
 
                 </div>
             </section>

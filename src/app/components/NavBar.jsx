@@ -31,7 +31,7 @@ function NavBar() {
     return (
         <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={styles.logo}>
-                <Image src="/logo.png" alt="Logo" width={150} height={100} />
+                <Image src="/logo3.png" alt="Logo" width={150} height={100} />
             </div>
 
             <button className={styles.menuToggle} onClick={toggleMenu}>

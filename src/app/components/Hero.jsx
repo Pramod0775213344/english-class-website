@@ -3,6 +3,8 @@ import React from 'react'
 import styles from '../styles/Hero.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import AnimatedCard from '@/app/animation/AnimatedCard';
+import AnimatedText from '@/app/animation/TextAnimation';
 
 
 function Hero() {
@@ -30,8 +32,11 @@ function Hero() {
           <div className={styles.herocontent}>
 
             {/* title section */}
-            <h1 className={`${styles.title} ${styles.textAnimation}`}>Master English,</h1>
-            <h2 className={`${styles.title2}`}>Unlock Your Future</h2>
+
+            <h1 className={`${styles.title} ${styles.textAnimation}`}><AnimatedText text="Master English," animationType="typing" /> <AnimatedCard /></h1>
+
+
+            <h2 className={`${styles.title2}`}><AnimatedText text="Unlock Your Future" animationType="typing" /><AnimatedCard /></h2>
 
             {/* paragraph area */}
             <div className={styles.paragraph}>

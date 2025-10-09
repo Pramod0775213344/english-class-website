@@ -15,7 +15,7 @@ function Footer() {
                     <div className={styles.footerContent}>
                         <div className={styles.logoAndTitle}>
                             <div className={styles.footerLogo}>
-                                <Image src="/logo.png" alt="Logo" width={150} height={100} />
+                                <Image src="/logo3.png" alt="Logo" width={150} height={100} />
                             </div>
                             <div>
                                 <h2>Suranga Senayaka <br /> English Academy</h2>
