@@ -24,12 +24,15 @@ export default function Home() {
     <>
       <ScrollContext>
         <NavBar />
-        <Hero />
-        <Courses />
-        <About />
-        <TecherSection />
-        <FeedBack />
-        <Contact />
+        <main>
+          <Hero />
+          <Courses />
+          <About />
+          <TecherSection />
+          <FeedBack />
+          <Contact />
+        </main>
+
         <Footer />
       </ScrollContext>
     </>

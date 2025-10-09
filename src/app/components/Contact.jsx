@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../page.module.css'
+import styles from '../styles/Contact.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMap, faHeadphones, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import ContactForm from './form';

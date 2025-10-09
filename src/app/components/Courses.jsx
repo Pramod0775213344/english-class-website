@@ -1,11 +1,19 @@
+'use client'
 import React from 'react'
-import styles from '../page.module.css'
+import styles from '../styles/Courses.module.css'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faMap, faCalendar, faClock } from '@fortawesome/free-solid-svg-icons'
 
 
 function Courses() {
+
+       const handleClickContact = () => {
+        const contactSection = document.getElementById('contactForm');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return (
         <div>
             {/* course section */}
@@ -31,7 +39,7 @@ function Courses() {
                             <p style={{ marginTop: "5px" }}><span>Morawaka(Sipone) - Friday | 8.30 AM - 2.00PM</span></p>
                             <p style={{ marginTop: "5px" }}><span>Matara(Dakuna) - Sunday | 8.30 AM - 2.00PM</span></p>
                             <p style={{ marginTop: "5px" }}><span>Online Zoom - Mon / Wed / Fri / Sat</span></p>
-                            <button className={styles.courseButton}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                            <button className={styles.courseButton} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
                         </div>
 
 
@@ -44,7 +52,7 @@ function Courses() {
                             <h3>Southwind Saturday English School</h3>
                             <p>Focus on Speaking, Listening, Reading, and Writing through activities, group work, and real-life practice.</p>
                             <p style={{ marginTop: "25px" }}><span>Every Saturday from 8.00 AM – 6.00 PM</span></p>
-                            <button className={styles.courseButton} style={{ marginTop: "143px" }}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                            <button className={styles.courseButton} style={{ marginTop: "143px" }} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
                         </div>
 
                     </div>

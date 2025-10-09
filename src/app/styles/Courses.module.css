@@ -1,0 +1,189 @@
+.coursediv {
+    text-align: center;
+
+}
+.subtitle {
+
+    background-color: #ffffff29;
+    color: #fff;
+    padding: 12px;
+    margin: 0 710px;
+    border-radius: 30px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.coursediv h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.coursediv p {
+
+    font-size: 16px;
+    color: #AAA4A4;
+    margin: 20px 410px;
+}
+
+.courseCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.courseCard {
+    margin-top: 50px;
+    width: 600px;
+    height: 770px;
+    background-color: #aaa4a42e;
+
+}
+
+.courseImage {
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.courseImage2 {
+    border-top-left-radius: 30px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.courseCard h3 {
+    color: #fff;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 21px;
+
+}
+
+.courseCard p {
+    color: #AAA4A4;
+    padding: 0 30px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.courseCard p span {
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+
+}
+
+.courseButton {
+    color: #fff;
+    background-color: #D09922;
+    width: 551px;
+    height: 44px;
+    border-radius: 8;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 30px 20px;
+    min-width: 200px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.classesTitle {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 80px;
+}
+
+.mainClassCardDiv {
+    margin: 100px;
+    border-radius: 30px;
+    padding: 100px;
+    background-color: #aaa4a422;
+}
+
+/* Grid container */
+.classCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* two equal columns */
+    gap: 30px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+/* Each card */
+.classCard {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.classCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.classCard h2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.assessmentDetailsDiv {
+    margin: 100px;
+    border-radius: 30px;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    background-color: #aaa4a422;
+}
+
+.assessmentDetailsDiv h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.assessmentDetailsDiv p {
+    color: #AAA4A4;
+    font-weight: 800;
+    line-height: 1.45;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: clamp(16px, 2.0vw, 20px);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.assessmentButton {
+    color: #fff;
+    background-color: #000000;
+    width: 281px;
+    height: 64px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0 auto;
+}

@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
         <FontAwesome />
       </head>
-      <body className={`${inter.variable}`}>
+      <body className={inter.className}>
         {children}
       </body>
     </html>

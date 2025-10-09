@@ -1,0 +1,132 @@
+.aboutdiv {
+    margin: 0 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.aboutsubtitle {
+    background-color: #ffffff29;
+    color: #fff;
+    padding: 12px;
+    margin: 0 510px;
+    border-radius: 30px;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.aboutdiv h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.aboutdiv p {
+    line-height: 140%;
+    font-size: 20px;
+    color: #AAA4A4;
+
+}
+
+.aboutCards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+
+}
+
+.aboutImageCard {
+    margin-top: 50px;
+    object-fit: cover;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    opacity: 0.6;
+}
+
+
+.aboutCard {
+    margin-top: 50px;
+    width: 600px;
+    height: 600px;
+    background-color: #aaa4a41e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+.aboutCard h3 {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 25px;
+    color: #ffffffb7;
+
+}
+
+.aboutCard p {
+    width: 450px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 170%;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* core value  */
+.coreValueDiv {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.coreValueDiv h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+
+}
+
+.coreValueDiv p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.coreValueCards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+    margin: 90px;
+}
+
+.coreValueCard {
+    background-color: #38383859;
+    border-radius: 50px;
+    margin: 10px 50px;
+    padding: 50px;
+
+}
+
+.coreValueCard h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.coreIcon {
+    height: 50px;
+    width: 50px;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.coreIcon svg {
+    margin-top: 10px;
+}

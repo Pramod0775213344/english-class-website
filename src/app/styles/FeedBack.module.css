@@ -1,0 +1,89 @@
+.feedbackDiv {
+    margin: 0 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.feedbackSubtitle {
+    color: #fff;
+    padding: 12px;
+    margin: 0 500px;
+    border-radius: 10px;
+
+}
+
+.feedbackDiv h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.feedbackDiv p {
+    line-height: 140%;
+    font-size: 20px;
+    color: #AAA4A4;
+
+}
+
+.feedbackCards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+    margin: 90px;
+}
+
+.feedbackCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #38383859;
+    border-radius: 50px;
+    margin: 10px 50px;
+    padding: 50px;
+
+}
+
+.feedbackCard h1 {
+    display: flex;
+    color: #fff;
+}
+
+.feedbackCard p {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.feedbackCard h4 {
+    margin-top: 20px;
+    display: flex;
+    color: #fff;
+}
+
+.profileIcon {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #D09922;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.profileIcon p {
+    margin-top: 15px;
+}
+
+.studentDetails {
+    display: flex;
+
+}
+
+.student p {
+    text-align: start;
+}

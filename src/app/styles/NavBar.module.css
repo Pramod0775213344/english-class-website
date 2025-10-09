@@ -1,0 +1,128 @@
+/* navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #000;
+    z-index: 100;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Desktop navLinks */
+.navLinks {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+.navLinks ul {
+    list-style: none;
+    display: flex;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks ul li {
+    padding: 1em 2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.navLinks ul li:hover {
+    color: #D09922;
+    border-bottom: 1px solid #D09922;
+}
+
+.enrollNow {
+    background-color: #D09922;
+    padding: 14px 24px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 8px;
+    width: 130px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hamburger menu button */
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1100;
+}
+/* Default styles (desktop) */
+.mobileEnrollBtn {
+    display: none;
+}
+
+.desktopEnrollBtn {
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 15em;
+        background: #000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 5em;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .showMenu {
+        right: 0;
+    }
+
+    .navLinks ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navLinks ul li {
+        width: 100%;
+        padding: 1em 2em;
+    }
+
+    .enrollNow {
+        margin: 1em 2em;
+        width: calc(100% - 4em);
+    }
+
+    .mobileEnrollBtn {
+        display: block;
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    .desktopEnrollBtn {
+        display: none;
+    }
+
+    .enrollNow {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

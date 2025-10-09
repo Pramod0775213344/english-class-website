@@ -1,0 +1,118 @@
+.contactDiv {
+    margin: 0 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.contactSubtitile {
+    color: #fff;
+    padding: 12px;
+    margin: 0 500px;
+    border-radius: 10px;
+
+}
+
+.contactDiv h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contactDiv p {
+    line-height: 140%;
+    font-size: 18px;
+    color: #AAA4A4;
+
+}
+
+.contactCards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+    margin: 90px;
+}
+
+.contactFormCard {
+    background-color: #38383859;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 50px;
+    width: 1000px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contactCard {
+    color: #fff;
+    text-align: start;
+}
+
+.contactCard h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.contactCard p {
+    font-size: 20px;
+    color: #ffffffb7;
+    text-align: start;
+    line-height: 150%;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contactDetailsCard {
+    background-color: #ffffff13;
+    border-radius: 10px;
+    margin: 40px 0;
+    padding: 20px;
+    width: 550px;
+    height: 176px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.contactIcon {
+    background-color: #ebb30a2e;
+    border-radius: 10px;
+    margin: 40px 40px;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contactDetailsCard h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.contactDetailsCard ul {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: start;
+    line-height: 150%;
+    font-weight: 800;
+}
+
+.contactFormDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}

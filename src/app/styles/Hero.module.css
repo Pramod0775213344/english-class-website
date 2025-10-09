@@ -1,0 +1,92 @@
+
+
+
+.title {
+
+    color: #fff;
+    font-size: 66px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+
+.title2 {
+    color: #D09922;
+    font-size: 66px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.paragraph p {
+    width: 520px;
+    text-align: center;
+    line-height: 140%;
+    height: 113px;
+    color: #AAA4A4;
+    font-weight: 700;
+}
+
+.buttonDiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 40px;
+}
+
+.startButton {
+    color: #fff;
+    background-color: #D09922;
+    width: 281px;
+    height: 64px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.exploreButton {
+    color: #D09922;
+    border-color: #D09922;
+    background-color: #000000;
+    width: 281px;
+    height: 64px;
+    border-radius: 8;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.detaislDiv {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+.detaislDiv h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}

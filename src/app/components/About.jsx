@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../page.module.css'
+import styles from '../styles/About.module.css'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faHeart, faCircle } from '@fortawesome/free-solid-svg-icons'

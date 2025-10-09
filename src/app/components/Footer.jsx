@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from '../page.module.css'
+import styles from '../styles/Footer.module.css'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
@@ -25,10 +26,10 @@ function Footer() {
                     <div className={styles.footerContent}>
                         <h2>Quick Links</h2>
                         <ul>
-                            <li>Home</li>
-                            <li>About Us</li>
-                            <li>Courses</li>
-                            <li>Contact</li>
+                            <li><Link href="#home">Home</Link></li>
+                            <li><Link href="#about">About Us</Link></li>
+                            <li><Link href="#courses">Courses</Link></li>
+                            <li><Link href="#contact">Contact</Link></li>
                         </ul>
                     </div>
                     <div className={styles.footerContent}>
