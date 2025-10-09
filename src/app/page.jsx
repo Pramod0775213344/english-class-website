@@ -24,8 +24,8 @@ export default function Home() {
     <>
       <ScrollContext>
         <NavBar />
+              <Hero />
         <main>
-          <Hero />
           <Courses />
           <About />
           <TecherSection />

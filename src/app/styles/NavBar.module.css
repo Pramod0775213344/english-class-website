@@ -1,13 +1,21 @@
 /* navbar */
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 5px;
+    z-index:1000;
+    transition: all ease linear;
+}
+
+.scrolled{
     background-color: #000;
-    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.5s ease;
 }
 
 .logo img {
