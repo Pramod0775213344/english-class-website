@@ -85,6 +85,7 @@
 
 /* Responsive styles */
 @media (max-width: 900px) {
+
     .menuToggle {
         display: block;
     }
