@@ -68,3 +68,41 @@
     justify-self: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .teacherDetails {
+        margin: 0 20px;
+    }
+
+    .teacherDetails h2 {
+        font-size: 28px;
+    }
+
+    .teacherDetails p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .teacherDetailsDiv {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 60px;
+        gap: 30px;
+    }
+
+    .teacherDetailsList h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .teacherDetailsList ul {
+        font-size: 16px;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    .teacherImage {
+        width: 200px;
+        height: 200px;
+    }
+}
