@@ -93,6 +93,11 @@
     cursor: pointer;
     transition: 0.3s ease all;
 }
+.courseButton:hover {
+    background-color: #b1821c;
+    font-weight: 700;
+    transform: scale(1.05);
+}
 
 .classesTitle {
     color: #fff;
@@ -186,6 +191,13 @@
     justify-content: center;
     align-items: center;
     margin: 50px auto 0 auto;
+       transition: 0.3s ease all;
+}
+.assessmentButton:hover {
+    background-color: #333333;
+    color: #ffffff;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 @media (max-width: 900px) {
 

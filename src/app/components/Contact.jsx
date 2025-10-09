@@ -20,10 +20,13 @@ function Contact() {
                 </div>
 
                 <div className={styles.contactCards}>
-                    <div>
-                        <ContactForm />
-                    </div>
+                    <AnimatedCard animationType="fadeUp">
+                        <div>
+                            <ContactForm />
+                        </div>
+                    </AnimatedCard>
                     <div className={styles.contactCard}>
+                        
                         <h1>Get In touch with us</h1>
                         <p>Our friendly admissions team is here to help you <br /> choose the perfect course and answer any <br /> questions about your English learning journey.</p>
 
@@ -61,7 +64,7 @@ function Contact() {
                                     </div>
                                 </div>
                             </AnimatedCard>
-                            <AnimatedCard animationType="fadeUp" delay={0.4}>
+                            <AnimatedCard animationType="fadeUp" delay={0.3}>
                                 <div className={styles.contactDetailsCard}>
                                     <div className={styles.contactIcon}>
                                         <FontAwesomeIcon icon={faEnvelope} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />

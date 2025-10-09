@@ -109,6 +109,12 @@
     transition: 0.3s ease all;
 }
 
+.startButton:hover,
+.exploreButton:hover {
+
+    transform: scale(1.05);
+}
+
 .detaislDiv {
     margin-top: 100px;
     display: flex;

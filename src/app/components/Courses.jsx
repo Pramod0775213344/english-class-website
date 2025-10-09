@@ -133,7 +133,7 @@ function Courses() {
                 <div className={styles.assessmentDetailsDiv}>
                     <h1>Not sure which course is right for you?</h1>
                     <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
-                    <button className={styles.assessmentButton}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                    <button className={styles.assessmentButton} onClick={handleClickContact}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
                 </div>
             </section >
         </div>

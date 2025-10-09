@@ -61,6 +61,12 @@
     height: 52px;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.enrollNow:hover {
+    background-color: #b37f1a;
+    transform: scale(1.05);
 }
 
 /* Hamburger menu button */
