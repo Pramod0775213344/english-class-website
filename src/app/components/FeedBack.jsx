@@ -47,7 +47,7 @@ function FeedBack() {
 
                     </div>
                     </AnimatedCard>
-                    <AnimatedCard animationType="fadeUp" delay={0.2}>
+                    <AnimatedCard animationType="fadeUp" delay={0.1}>
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>
@@ -74,7 +74,7 @@ function FeedBack() {
 
                     </div>
                     </AnimatedCard>
-                    <AnimatedCard animationType="fadeUp" delay={0.4}>
+                    <AnimatedCard animationType="fadeUp" delay={0.2}>
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>

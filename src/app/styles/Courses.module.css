@@ -202,8 +202,8 @@
 @media (max-width: 900px) {
 
     .subtitle {
-        margin: 0 auto;
-        width: 80%;
+        margin: 60px auto;
+        width: 50%;
         font-size: 20px;
     }
 
@@ -224,8 +224,8 @@
 
     .courseCard {
         width: 90%;
-        height: auto;
-        margin-bottom: 40px;
+        margin: 30px;
+       
     }
 
     .courseButton {

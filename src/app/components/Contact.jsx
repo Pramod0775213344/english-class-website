@@ -48,7 +48,7 @@ function Contact() {
                                 </div>
                             </AnimatedCard>
 
-                            <AnimatedCard animationType="fadeUp" delay={0.2}>
+                            <AnimatedCard animationType="fadeUp" delay={0.1}>
                                 <div className={styles.contactDetailsCard}>
                                     <div className={styles.contactIcon}>
                                         <FontAwesomeIcon icon={faHeadphones} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />
@@ -64,7 +64,7 @@ function Contact() {
                                     </div>
                                 </div>
                             </AnimatedCard>
-                            <AnimatedCard animationType="fadeUp" delay={0.3}>
+                            <AnimatedCard animationType="fadeUp" delay={0.2}>
                                 <div className={styles.contactDetailsCard}>
                                     <div className={styles.contactIcon}>
                                         <FontAwesomeIcon icon={faEnvelope} style={{ color: "#e1bb0eff", height: "30px", width: "30px" }} />

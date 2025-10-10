@@ -46,7 +46,7 @@ function Footer() {
 
             {/* footer */}
             <footer className={styles.footer}>
-                <p>© 2024 Southwind English Academy. All rights reserved.</p>
+                <p>© 2025 Southwind English Academy. All rights reserved.</p>
             </footer>
         </div>
     )

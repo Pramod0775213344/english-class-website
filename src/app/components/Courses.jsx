@@ -72,7 +72,7 @@ function Courses() {
                 <div className={styles.mainClassCardDiv}>
                     <div className={styles.classCards}>
 
-                        <AnimatedCard animationType="fadeLeft" delay={0.2}>
+                        <AnimatedCard animationType="fadeLeft" delay={0.1}>
                             <div className={styles.classCard}>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
@@ -85,7 +85,7 @@ function Courses() {
                                     3.30 PM - 5.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeRight" delay={0.3}>
+                        <AnimatedCard animationType="fadeRight" delay={0.2}>
                             <div className={styles.classCard}>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
@@ -100,7 +100,7 @@ function Courses() {
                         </AnimatedCard>
                     </div>
                     <div className={styles.classCards}>
-                        <AnimatedCard animationType="fadeLeft" delay={0.4}>
+                        <AnimatedCard animationType="fadeLeft" delay={0.3}>
                             <div className={styles.classCard}>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
@@ -113,7 +113,7 @@ function Courses() {
                                     2.30 PM - 4.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeRight" delay={0.5}>
+                        <AnimatedCard animationType="fadeRight" delay={0.4}>
                             <div className={styles.classCard}>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />

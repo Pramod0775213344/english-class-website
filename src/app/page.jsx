@@ -1,12 +1,4 @@
 
-import Image from "next/image";
-import styles from "./page.module.css";
-import ContactForm from "./components/form";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faSun, faCircle, faCalendar, faClock, faMap, faMessage, faEnvelope, faHeadphones, faPlayCircle } from "@fortawesome/free-regular-svg-icons";
-import { faStar, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faLinkedin, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import MyButtonComponent from "./components/Button";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Courses from "./components/Courses";

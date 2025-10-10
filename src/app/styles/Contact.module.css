@@ -153,15 +153,32 @@
 
     .contactCard {
         width: 100%;
+
+    }
+
+    .contactCard h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .contactCard p {
+        width: 100%;
+        font-size: 16px;
+        margin: 0;
+        padding: 0 10px;
+        text-align: center;
     }
 
     .contactDetailsCard {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        gap: 10px;
+        justify-content: flex-start;
+        gap: 45px;
         padding: 20px;
         height: auto;
+        margin: 30px 0;
     }
 
     .contactIcon {
