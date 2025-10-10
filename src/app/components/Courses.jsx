@@ -29,11 +29,9 @@ function Courses() {
                 {/* course cards */}
 
                 <div className={styles.courseCards} >
-
-
-                    <AnimatedCard animationType="fadeLeft">
-                        <div className={styles.courseCard} style={{ borderTopRightRadius: "30px", borderBottomLeftRadius: "30px" }}>
-                            <div>
+                    <AnimatedCard animationType="fadeUp">
+                        <div className={`${styles.courseCard} ${styles.courseCardOne}`}>
+                        <div>
                                 <Image src="/course1.jpg" alt="Course 1" width={600} height={400} className={styles.courseImage} />
                             </div>
                             <div>
@@ -49,9 +47,9 @@ function Courses() {
                         </div>
                     </AnimatedCard>
 
-                    <AnimatedCard animationType="fadeRight">
-                        <div className={styles.courseCard} style={{ borderBottomRightRadius: "30px", borderTopLeftRadius: "30px" }}>
-                            <div>
+                    <AnimatedCard animationType="fadeUp">
+                        <div className={`${styles.courseCard} ${styles.courseCardTwo}`}>
+                        <div>
                                 <Image src="/course2.jpg" alt="Course 1" width={600} height={400} className={styles.courseImage2} />
                             </div>
                             <div>
@@ -68,12 +66,14 @@ function Courses() {
 
                 {/* title general class details */}
                 <h1 className={styles.classesTitle}>General English Classes Details</h1>
+                <p className={styles.classesTitleParagraph}>Enhance your English language skills with our comprehensive courses taught by experienced instructors</p>
                 {/* class Cards */}
                 <div className={styles.mainClassCardDiv}>
                     <div className={styles.classCards}>
 
-                        <AnimatedCard animationType="fadeLeft" delay={0.1}>
+                        <AnimatedCard animationType="fadeUp" delay={0.1}>
                             <div className={styles.classCard}>
+                                <h1>Monday Evening Batch</h1>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Gampaha - SyZyGy</h2>
@@ -85,8 +85,9 @@ function Courses() {
                                     3.30 PM - 5.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeRight" delay={0.2}>
+                        <AnimatedCard animationType="fadeUp" delay={0.2}>
                             <div className={styles.classCard}>
+                                <h1>Tuesday Evening Batch</h1>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Gampaha - SyZyGy</h2>
@@ -100,8 +101,9 @@ function Courses() {
                         </AnimatedCard>
                     </div>
                     <div className={styles.classCards}>
-                        <AnimatedCard animationType="fadeLeft" delay={0.3}>
+                        <AnimatedCard animationType="fadeUp" delay={0.3}>
                             <div className={styles.classCard}>
+                                <h1>Wednesday Evening Batch</h1>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Galle - Sipara</h2>
@@ -113,8 +115,9 @@ function Courses() {
                                     2.30 PM - 4.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeRight" delay={0.4}>
+                        <AnimatedCard animationType="fadeUp " delay={0.4}>
                             <div className={styles.classCard}>
+                                <h1>Thursday Online Batch</h1>
                                 <h2>
                                     <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Online - Zoom</h2>

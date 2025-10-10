@@ -16,7 +16,7 @@ function About() {
                     <h4 className={styles.aboutsubtitle}>About us</h4>
 
                     <h1>Your success is our 15-year legacy</h1>
-                    <p>Since our founding, we've remained committed to a single, powerful idea: that English <br></br> fluency can transform lives. We achieve this by seamlessly integrating proven teaching <br></br> methodologies with innovative technology, creating a learning experience that is both <br></br> effective and dynamic. Get ready to achieve your English excellence with a partner you<br></br> can trust..</p>
+                    <p>Since our founding, we've remained committed to a single, powerful idea: that English fluency can transform lives. We achieve this by seamlessly integrating proven teaching  methodologies with innovative technology, creating a learning experience that is both  effective and dynamic. Get ready to achieve your English excellence with a partner you can trust..</p>
                 </div>
 
                 {/* about card div */}

@@ -1,17 +1,20 @@
+/* === ABOUT SECTION STYLES === */
+
 .aboutdiv {
-    margin: 0 200px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    align-items: center;
+    padding: 0 20px;
 }
 
 .aboutsubtitle {
     background-color: #ffffff29;
     color: #fff;
-    padding: 12px;
-    margin: 0 510px;
+    padding: 12px 24px;
+    margin: 0 auto 25px;
     border-radius: 30px;
     font-size: 24px;
-    margin-bottom: 25px;
+    display: inline-block;
 }
 
 .aboutdiv h1 {
@@ -22,98 +25,128 @@
 }
 
 .aboutdiv p {
-    line-height: 140%;
+    line-height: 1.6;
     font-size: 20px;
     color: #AAA4A4;
-
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+/* === ABOUT IMAGE & MISSION CARDS === */
 
 .aboutCards {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .aboutImageCard {
-    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    height: 405px;
+    border-radius: 25px;
     object-fit: cover;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    opacity: 0.6;
+    opacity: 0.9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-
 .aboutCard {
-    margin-top: 50px;
-    width: 600px;
-    height: 600px;
+
+    max-width: 600px;
     background-color: #aaa4a41e;
+    border-radius: 25px ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
+    justify-content: center;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    gap: 40px;
 }
 
+.aboutCard:hover {
+    transform: scale(1.03);
+}
 
 .aboutCard h3 {
-    margin-top: 50px;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     background-color: #000000;
-    padding: 20px;
+    padding: 16px 24px;
     border-radius: 25px;
     color: #ffffffb7;
-
 }
 
 .aboutCard p {
-    width: 450px;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
-    line-height: 170%;
+    line-height: 1.7;
     font-weight: 600;
     color: #fff;
+    max-width: 450px;
 }
 
-/* core value  */
+/* === CORE VALUES === */
+
 .coreValueDiv {
     color: #fff;
     margin-top: 100px;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .coreValueDiv h2 {
-    text-align: center;
-    margin-bottom: 40px;
     font-size: 28px;
-
+    margin-bottom: 20px;
 }
 
 .coreValueDiv p {
-    text-align: center;
+    font-size: 18px;
     margin-bottom: 40px;
+    color: #AAA4A4;
 }
 
 .coreValueCards {
     display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-    text-align: center;
-    margin: 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .coreValueCard {
     background-color: #38383859;
-    border-radius: 50px;
-    margin: 10px 50px;
-    padding: 50px;
+    border-radius: 30px;
+    padding: 40px 30px;
+    flex: 1 1 300px;
+    max-width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.coreValueCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .coreValueCard h4 {
     font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.coreValueCard p {
+    color: #dcdcdc;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .coreIcon {
@@ -122,27 +155,21 @@
     background-color: #000000;
     text-align: center;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .coreIcon svg {
-    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    color: #e1bb0eff;
 }
 
+/* === RESPONSIVE DESIGN === */
+
 @media (max-width: 900px) {
-
-    .aboutdiv {
-        margin: 0 20px;
-    }
-
-    .aboutsubtitle {
-        margin: 0 auto 25px auto;
-        width: 70%;
-        font-size: 20px;
-    }
-
     .aboutdiv h1 {
         font-size: 28px;
     }
@@ -152,39 +179,36 @@
         padding: 0 10px;
     }
 
+    .aboutsubtitle {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
     .aboutCards {
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
 
     .aboutImageCard {
-        width: 90vw;
-        height: auto;
-        margin: 0 auto;
-        border-radius: 20px 20px 0 0;
+        border-radius: 25px 25px 0 0;
+        width: 100%;
     }
 
     .aboutCard {
-        width: 90vw;
-        height: auto;
-        border-radius: 0 0 20px 20px;
-        padding: 20px;
+        border-radius: 0 0 25px 25px;
+        width: 100%;
+        padding: 30px 20px;
     }
 
     .aboutCard h3 {
         font-size: 24px;
-        margin-top: 20px;
         margin-bottom: 20px;
     }
 
     .aboutCard p {
-        width: 100%;
         font-size: 16px;
-        padding: 0 10px;
-    }
-
-    .coreValueDiv {
-        margin: 60px 20px 0 20px;
+        width: 100%;
     }
 
     .coreValueDiv h2 {
@@ -198,16 +222,15 @@
 
     .coreValueCards {
         flex-direction: column;
-        align-items: center;
-        margin: 0;
         gap: 30px;
+        align-items: center;
     }
 
     .coreValueCard {
         width: 90%;
-        padding: 30px;
-        margin: 30px;
-        border-radius: 30px;
+        max-width: 100%;
+        padding: 30px 20px;
+        margin: 0 auto;
     }
 
     .coreIcon {
@@ -218,7 +241,5 @@
     .coreIcon svg {
         height: 30px;
         width: 30px;
-        margin-top: 10px;
     }
-
 }

@@ -7,20 +7,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px 20px;
+    background-color: transparent;
     z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .scrolled {
     background-color: #000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.5s ease;
-
-
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
-    max-width: 100%;
+    max-width: 120px;
     height: auto;
 }
 
@@ -29,7 +28,6 @@
     display: flex;
     gap: 48px;
     justify-content: center;
-
 }
 
 .navLinks ul {
@@ -80,7 +78,7 @@
     z-index: 1100;
 }
 
-/* Default styles (desktop) */
+/* Default styles */
 .mobileEnrollBtn {
     display: none;
 }
@@ -91,27 +89,25 @@
 
 /* Responsive styles */
 @media (max-width: 900px) {
-
+    .navbar{
+        background-color: #000;
+    }
     .menuToggle {
         display: block;
     }
 
     .navLinks {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 15em;
-        background: #000;
+        position: absolute;
+        top: 117px; /* below navbar */
+        left: 0;
+        right: 0;
+        background-color: #000;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 5em;
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-    }
-
-    .showMenu {
-        right: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease;
+        z-index: 999;
     }
 
     .navLinks ul {
@@ -122,25 +118,32 @@
     .navLinks ul li {
         width: 100%;
         padding: 1em 2em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navLinks ul li:hover {
+        background-color: #111;
+        color: #D09922;
+        border-bottom: none;
+    }
+
+    .showMenu {
+        max-height: 500px; /* or a safe upper bound to fit content */
     }
 
     .enrollNow {
         margin: 1em 2em;
         width: calc(100% - 4em);
+        box-sizing: border-box;
     }
 
     .mobileEnrollBtn {
         display: block;
-        margin-top: 2em;
+        margin-top: 1em;
         width: 100%;
     }
 
     .desktopEnrollBtn {
         display: none;
-    }
-
-    .enrollNow {
-        width: 100%;
-        box-sizing: border-box;
     }
 }
