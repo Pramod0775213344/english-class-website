@@ -1,6 +1,6 @@
-/* === CONTACT SECTION === */
-
+/* === CONTACT SECTION BASE === */
 .contactDiv {
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
@@ -8,24 +8,24 @@
 }
 
 .contactSubtitle {
-  background-color: #ffffff29;
+  background-color: rgba(255, 255, 255, 0.16); /* #ffffff29 ~ 16% */
   color: #fff;
   padding: 12px 24px;
   border-radius: 30px;
   display: inline-block;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   margin-bottom: 20px;
 }
 
 .contactDiv h1 {
-  font-size: clamp(28px, 5vw, 40px);
+  font-size: clamp(26px, 5vw, 40px);
   font-weight: 800;
   color: #fff;
   margin-bottom: 20px;
 }
 
 .contactDiv p {
-  font-size: 18px;
+  font-size: clamp(16px, 2vw, 18px);
   color: #aaa4a4;
   line-height: 1.6;
   max-width: 700px;
@@ -36,25 +36,27 @@
 .contactCards {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
   margin-top: 60px;
   padding: 0 20px;
 }
 
-/* === FORM SECTION === */
+/* === FORM CARD === */
 .contactFormCard {
   border-radius: 20px;
   padding: 40px;
   width: 100%;
-  max-width: 1450px;
+  max-width: 800px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  background-color: transparent; /* optional */
+  background-color: transparent;
+  flex: 1 1 100%;
 }
 
-/* === CONTACT INFO SECTION === */
+/* === CONTACT INFO CARD === */
 .contactCard {
   max-width: 550px;
+  width: 100%;
   color: #fff;
   text-align: left;
   flex: 1 1 100%;
@@ -73,9 +75,9 @@
   margin-bottom: 30px;
 }
 
-/* === CONTACT METHOD BOX === */
+/* === CONTACT METHOD BOXES === */
 .contactDetailsCard {
-  background-color: #ffffff13;
+  background-color: rgba(255, 255, 255, 0.08); /* #ffffff13 ~ 8% */
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 25px;
@@ -86,7 +88,7 @@
 }
 
 .contactIcon {
-  background-color: #ebb30a2e;
+  background-color: rgba(235, 179, 10, 0.18); /* #ebb30a2e ~ 18% */
   border-radius: 10px;
   padding: 15px;
   width: 60px;
@@ -112,19 +114,24 @@
   word-break: break-word;
 }
 
-/* === RESPONSIVE === */
+/* === BREAKPOINT @max-width 1200px === */
+@media (max-width: 1200px) {
+  .contactCards {
+    gap: 30px;
+    /* keep flex-direction row so form + info sit side by side if space allows */
+  }
+  .contactFormCard,
+  .contactCard {
+    max-width: 100%;
+    padding: 30px;
+  }
+}
 
+/* === TABLETS & SMALL DESKTOPS (max 900px) === */
 @media (max-width: 900px) {
   .contactCards {
     flex-direction: column;
-    gap: 30px;
     align-items: center;
-  }
-
-  .contactFormCard,
-  .contactCard {
-    padding: 25px;
-    width: 100%;
   }
 
   .contactCard h1,
@@ -136,6 +143,7 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 15px;
+    width: 100%;
   }
 
   .contactIcon {
@@ -153,21 +161,18 @@
   }
 }
 
-/* 🔥 NEW: For small mobile devices like iPhone 12, Pixel 8 */
+/* === PHONES (max 600px) === */
 @media (max-width: 600px) {
   .contactDiv h1 {
     font-size: 22px;
   }
-
   .contactDiv p {
     font-size: 14px;
   }
-
   .contactSubtitle {
     font-size: 14px;
     padding: 6px 14px;
   }
-
   .contactCards {
     padding: 0 10px;
   }
@@ -184,5 +189,18 @@
 
   .contactDetailsCard ul {
     font-size: 13px;
+  }
+}
+
+/* === VERY SMALL PHONES (max 400px) === */
+@media (max-width: 400px) {
+  .contactDiv h1 {
+    font-size: 20px;
+  }
+  .contactDetailsCard h4 {
+    font-size: 15px;
+  }
+  .contactDetailsCard ul {
+    font-size: 12.5px;
   }
 }
