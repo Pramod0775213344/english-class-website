@@ -18,7 +18,7 @@ function Courses() {
     return (
         <div>
             {/* course section */}
-            <section style={{ marginTop: "100px" }} id="courses">
+            <section id="courses">
                 <div className={styles.coursediv}>
                     <h4 className={styles.subtitle}>Our Courses</h4>
 

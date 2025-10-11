@@ -1,8 +1,13 @@
+.feedbackSection {
+    padding: 80px 20px;
+    background-color: #121212; /* or any dark background */
+}
+
 .feedbackDiv {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 16px; /* Adjust padding slightly for responsiveness */
 }
 
 .feedbackSubtitle {
@@ -10,13 +15,13 @@
     color: #fff;
     padding: 12px 24px;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
     margin-bottom: 25px;
 }
 
 .feedbackDiv h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
     color: #fff;
     margin-bottom: 20px;
@@ -32,27 +37,29 @@
 
 .feedbackCards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    padding: 60px 20px;
+    padding: 60px 0;
+    margin: 50px;
 }
 
 .feedbackCard {
     background-color: #38383859;
     border-radius: 30px;
     padding: 40px 30px;
+    width: 100%;
     max-width: 360px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #fff;
     text-align: left;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .feedbackCard h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -77,18 +84,18 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    color: #fff;
     background-color: #d09922;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 15px;
-    font-weight: bold;
-    font-size: 18px;
 }
 
-.profileIcon p{
-    margin-top: 30px;
+.profileIcon p {
+    margin: 0;
 }
 
 .student h4 {
@@ -103,8 +110,12 @@
     color: #aaa4a4;
 }
 
-/* Responsive Styles */
+/* ✅ Mobile & Tablet Responsive Styles */
 @media (max-width: 900px) {
+    .feedbackSection {
+        padding: 60px 16px;
+    }
+
     .feedbackDiv h1 {
         font-size: 28px;
     }
@@ -116,16 +127,19 @@
     .feedbackCards {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
+        padding: 40px 0;
     }
 
     .feedbackCard {
-        max-width: 90%;
-        padding: 30px 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 20px;
+        margin: 0 auto;
     }
 
     .feedbackCard h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .feedbackCard p {

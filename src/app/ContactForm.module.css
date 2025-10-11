@@ -103,5 +103,47 @@
 .contacFormStyles label{
   display: flex;
   justify-content: left;
-  
+
 }
+
+@media (max-width: 768px) {
+    .formcontainer {
+        padding: 40px 10px;
+    }
+
+    .contactform {
+        padding: 30px 20px;
+    }
+
+    .contactform h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .formrow {
+        flex-direction: column;
+        gap: 0; /* Stacked inputs don't need horizontal gap */
+    }
+
+    .formgroup {
+        margin-bottom: 30px; /* Reduced spacing for smaller view */
+    }
+
+    .formgroup label {
+        font-size: 0.9rem;
+    }
+
+    .formgroup input,
+    .formgroup select,
+    .formgroup textarea {
+        font-size: 0.9rem;
+        padding: 14px;
+    }
+
+    .sendbtn {
+        padding: 12px 0;
+        font-size: 0.95rem;
+    }
+}
+

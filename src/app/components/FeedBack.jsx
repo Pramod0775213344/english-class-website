@@ -9,12 +9,12 @@ function FeedBack() {
     return (
         <div>
             {/* student feedback */}
-            <section style={{ marginTop: "100px" }} id="feedback">
+            <section style={{marginTop:"50px"}} id="feedback">
                 <div className={styles.feedbackDiv}>
                     <h4 className={styles.feedbackSubtitle}>Students Success Stories</h4>
 
                     <h1>Real Result From Real Students</h1>
-                    <p>Join thousands of students who have transformed their lives and careers through our<br></br> English programs. Here's what they have to say.</p>
+                    <p>Join thousands of students who have transformed their lives and careers through our English programs. Here's what they have to say.</p>
                 </div>
 
                 <div className={styles.feedbackCards}>
@@ -47,7 +47,7 @@ function FeedBack() {
 
                     </div>
                     </AnimatedCard>
-                    <AnimatedCard animationType="fadeUp" delay={0.1}>
+                    <AnimatedCard animationType="fadeUp" >
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>
@@ -74,7 +74,7 @@ function FeedBack() {
 
                     </div>
                     </AnimatedCard>
-                    <AnimatedCard animationType="fadeUp" delay={0.2}>
+                    <AnimatedCard animationType="fadeUp">
                     <div className={styles.feedbackCard}>
                         <h1>"</h1>
                         <div style={{ textAlign: "start", marginBottom: "30px" }}>

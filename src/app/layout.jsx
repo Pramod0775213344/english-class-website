@@ -1,7 +1,11 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import FontAwesome from "./fontawesome";
 import { Toaster } from 'react-hot-toast';
+import OverlayLayout from "@/app/OverlayLayout";
+import ScrollToTop from '../app/components/ScrollToTop';
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +21,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
+
   return (
     <html lang="en">
       <head>
@@ -24,6 +31,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {children}
+        <OverlayLayout/>
+        <ScrollToTop />
         <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
