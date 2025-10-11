@@ -73,58 +73,58 @@ function Courses() {
 
                         <AnimatedCard animationType="fadeUp" >
                             <div className={styles.classCard}>
-                                <h1>Monday Evening Batch</h1>
-                                <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Gampaha - SyZyGy</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Monday - General English 2027</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    3.30 PM - 5.30 PM</h2>
-                            </div>
-                        </AnimatedCard>
-                        <AnimatedCard animationType="fadeUp" >
-                            <div className={styles.classCard}>
-                                <h1>Tuesday Evening Batch</h1>
-                                <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Gampaha - SyZyGy</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Tuseday - General English 2026</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    3.00 PM - 5.00 PM</h2>
+                                <Image src='/Syzygy.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <div className={styles.cardBottomTitle}>
+                                    <h3>General English 2027 Batch</h3>
+                                </div>
+                                <div className={styles.cardOverlay}>
+                                    <h3 className={styles.cardTitle}>General English 2027 Batch</h3>
+                                    <p className={styles.cardDescription}>Location : SYZYGY Gampaha</p>
+                                    <p className={styles.cardDescription}>Time : 3.30 p.m - 5.30 p.m</p>
+                                    <p className={styles.cardDescription}>Day : Monday</p>
+                                </div>
                             </div>
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp">
                             <div className={styles.classCard}>
-                                <h1>Wednesday Evening Batch</h1>
-                                <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Galle - Sipara</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Wednesday - General English 2026/2027</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    2.30 PM - 4.30 PM</h2>
+                                <Image src='/Syzygy.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <div className={styles.cardBottomTitle}>
+                                    <h3>General English 2026 Batch</h3>
+                                </div>
+                                <div className={styles.cardOverlay}>
+                                    <h3 className={styles.cardTitle}>General English 2026 Batch</h3>
+                                    <p className={styles.cardDescription}>Location : SYZYGY Gampaha</p>
+                                    <p className={styles.cardDescription}>Time : 3.00 p.m - 5.00 p.m</p>
+                                    <p className={styles.cardDescription}>Day : Tuesday</p>
+                                </div>
+                            </div>
+                        </AnimatedCard>
+                        <AnimatedCard animationType="fadeUp">
+                            <div className={styles.classCard}>
+                                <Image src='/Sipara.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <div className={styles.cardBottomTitle}>
+                                    <h3>General English  Friday Batch</h3>
+                                </div>
+                                <div className={styles.cardOverlay}>
+                                    <h3 className={styles.cardTitle}>General English 2026/2027 Batch</h3>
+                                    <p className={styles.cardDescription}>Location : Galle Sipara</p>
+                                    <p className={styles.cardDescription}>Time : 2.30 p.m - 4.30 p.m</p>
+                                    <p className={styles.cardDescription}>Day : Wednesday</p>
+                                </div>
                             </div>
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp ">
                             <div className={styles.classCard}>
-                                <h1>Thursday Online Batch</h1>
-                                <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Online - Zoom</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    Thursday - General English 2026/2027</h2>
-                                <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
-                                    8.00 PM - 10.00 PM</h2>
+                                <Image src='/zoom.png' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <div className={styles.cardBottomTitle}>
+                                    <h3>General English Online Class</h3>
+                                </div>
+                                <div className={styles.cardOverlay}>
+                                    <h3 className={styles.cardTitle}>General English Online Class</h3>
+                                    <p className={styles.cardDescription}>Method : Zoom app</p>
+                                    <p className={styles.cardDescription}>Time : 8.00 p.m - 10.00 p.m</p>
+                                    <p className={styles.cardDescription}>Day : Thursday</p>
+                                </div>
                             </div>
                         </AnimatedCard>
                     </div>
