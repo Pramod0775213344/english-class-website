@@ -1,26 +1,25 @@
 /* === CONTACT SECTION BASE === */
 .contactDiv {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 20px;
+    max-width: 1200px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 0 20px;
 }
-
 .contactSubtitle {
-  background-color: rgba(255, 255, 255, 0.16); /* #ffffff29 ~ 16% */
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 30px;
-  display: inline-block;
-  font-size: clamp(16px, 2vw, 20px);
-  margin-bottom: 20px;
+    display: inline-block; /* ✅ works with text-align center */
+    background-color: #ffffff29;
+    color: #fff;
+    padding: 12px 24px;
+    font-size:24px;
+    border-radius: 30px;
+    margin-bottom: 25px;
 }
 
 .contactDiv h1 {
   font-size: clamp(26px, 5vw, 40px);
   font-weight: 800;
   color: #fff;
+    text-align: center;
   margin-bottom: 20px;
 }
 
@@ -34,12 +33,11 @@
 
 /* === FLEX LAYOUT CONTAINER === */
 .contactCards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 60px;
-  padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 /* === FORM CARD === */
@@ -129,10 +127,12 @@
 
 /* === TABLETS & SMALL DESKTOPS (max 900px) === */
 @media (max-width: 900px) {
-  .contactCards {
-    flex-direction: column;
-    align-items: center;
-  }
+    .contactCards {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 100%;
+    }
 
   .contactCard h1,
   .contactCard p {
@@ -161,46 +161,86 @@
   }
 }
 
+
 /* === PHONES (max 600px) === */
 @media (max-width: 600px) {
-  .contactDiv h1 {
-    font-size: 22px;
-  }
-  .contactDiv p {
-    font-size: 14px;
-  }
-  .contactSubtitle {
-    font-size: 14px;
-    padding: 6px 14px;
-  }
-  .contactCards {
-    padding: 0 10px;
-  }
+    .contactDiv h1 {
+        font-size: 20px;
+    }
 
-  .contactDetailsCard {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
+    .contactDiv p {
+        font-size: 14px;
+    }
 
-  .contactIcon {
-    margin-bottom: 10px;
-  }
+    .contactSubtitle {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
 
-  .contactDetailsCard ul {
-    font-size: 13px;
-  }
+    .contactCards {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contactCards {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    .contactFormCard {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+
+    .contactDetailsCard {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .contactIcon {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactDetailsCard h4 {
+        font-size: 15px;
+    }
+
+    .contactDetailsCard ul {
+        font-size: 13px;
+        word-break: break-word;
+    }
 }
 
 /* === VERY SMALL PHONES (max 400px) === */
 @media (max-width: 400px) {
-  .contactDiv h1 {
-    font-size: 20px;
-  }
-  .contactDetailsCard h4 {
-    font-size: 15px;
-  }
-  .contactDetailsCard ul {
-    font-size: 12.5px;
-  }
+    .contactDiv h1 {
+        font-size: 18px;
+    }
+
+    .contactSubtitle {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .contactDiv p {
+        font-size: 13px;
+    }
+
+    .contactDetailsCard h4 {
+        font-size: 14px;
+    }
+
+    .contactDetailsCard ul {
+        font-size: 12px;
+    }
 }
+
