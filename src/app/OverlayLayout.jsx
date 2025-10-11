@@ -10,10 +10,10 @@ const OverlayLayout = ({ children }) => {
 
     useEffect(() => {
         // Start fade out after 800ms
-        const fadeOutTimer = setTimeout(() => setFadeOut(true), 800);
+        const fadeOutTimer = setTimeout(() => setFadeOut(true), 100);
 
         // Remove overlay from DOM after fade transition duration (0.5s + a buffer)
-        const removeTimer = setTimeout(() => setLoading(false), 1300);
+        const removeTimer = setTimeout(() => setLoading(false), 600);
 
         return () => {
             clearTimeout(fadeOutTimer);
@@ -24,7 +24,7 @@ const OverlayLayout = ({ children }) => {
 
     return (
         <>
-            {loading && <LoadingOverlay />}
+            {loading && <LoadingOverlay fadeOut={fadeOut} />}
             {children}
         </>
     );
