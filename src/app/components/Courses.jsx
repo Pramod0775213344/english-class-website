@@ -73,7 +73,7 @@ function Courses() {
 
                         <AnimatedCard animationType="fadeUp" >
                             <div className={styles.classCard}>
-                                <Image src='/Syzygy.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Class1.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English 2027 Batch</h3>
                                 </div>
@@ -101,7 +101,7 @@ function Courses() {
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp">
                             <div className={styles.classCard}>
-                                <Image src='/Sipara.jpg' alt="class 03" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Class2.jpg' alt="class 03" width={1020} height={10} className={styles.cardImage}/>
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English  Friday Batch</h3>
                                 </div>
