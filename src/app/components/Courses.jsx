@@ -115,7 +115,7 @@ function Courses() {
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp ">
                             <div className={styles.classCard}>
-                                <Image src='/zoom.png' alt="class 04" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Sir.jpg' alt="class 04" width={1020} height={10} className={styles.cardImage}/>
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English Online Class</h3>
                                 </div>
