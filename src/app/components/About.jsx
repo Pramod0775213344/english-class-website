@@ -10,7 +10,7 @@ function About() {
     return (
         <div>
             {/* about us section */}
-            <section style={{ marginTop: "100px" }} id="about">
+            <section style={{ marginTop: "100px",scrollMarginTop :"120px" }} id="about">
                 {/* about details div */}
                 <AnimatedCard animationType="scale">
                     <div className={styles.aboutdiv}>

@@ -18,7 +18,7 @@ function Courses() {
     return (
         <div>
             {/* course section */}
-            <section id="courses">
+            <section id="courses" style={{scrollMarginTop :"110px"}}>
                 <AnimatedCard animationType="scale">
                     <div className={styles.coursediv}>
                         <h4 className={styles.subtitle}>Our Courses</h4>

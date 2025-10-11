@@ -10,7 +10,7 @@ function Contact() {
     return (
         <div>
             {/* contact */}
-            <section style={{ marginTop: "50px" }} id="contact">
+            <section style={{ marginTop: "50px" ,scrollMarginTop :"140px"}} id="contact">
                 <div className={styles.contactDiv}>
                     <AnimatedCard animationType="fadeUp">
                         <h4 className={styles.contactSubtitle}>Get In Touch</h4>

@@ -39,10 +39,10 @@ function Footer() {
                     <div className={styles.footerContent} style={{marginBottom:"-135px"}}>
                         <h2>Visit Our Socials</h2>
                         <ul>
-                            <li><FontAwesomeIcon icon={faFacebook} /> Facebook</li>
-                            <li><FontAwesomeIcon icon={faInstagram} /> Instagram</li>
-                            <li><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</li>
-                            <li><FontAwesomeIcon icon={faTwitter} /> Twitter</li>
+                            <li><FontAwesomeIcon icon={faFacebook} /> <a href="https://www.facebook.com/share/17QvnKLs88/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                            <li><FontAwesomeIcon icon={faInstagram} /> <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                            <li><FontAwesomeIcon icon={faLinkedin} /> <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><FontAwesomeIcon icon={faTwitter} /> <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                         </ul>
                     </div>
                 </div>

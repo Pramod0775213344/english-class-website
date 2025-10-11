@@ -26,7 +26,7 @@ function Hero() {
   return (
     <div>
       {/* hero section */}
-      <section id="home">
+      <section id="home" style={{scrollMarginTop :"120px"}}>
 
         <div className={styles.hero}>
           <div className={styles.herocontent}>

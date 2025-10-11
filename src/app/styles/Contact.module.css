@@ -1,165 +1,188 @@
+/* === CONTACT SECTION === */
+
 .contactDiv {
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 0 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .contactSubtitle {
-    background-color: #ffffff29;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 30px;
-    display: inline-block;
-    font-size: 20px;
-    margin-bottom: 20px;
+  background-color: #ffffff29;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .contactDiv h1 {
-    font-size: clamp(28px, 5vw, 40px);
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 20px;
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .contactDiv p {
-    font-size: 18px;
-    color: #aaa4a4;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
+  font-size: 18px;
+  color: #aaa4a4;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Layout container */
+/* === FLEX LAYOUT CONTAINER === */
 .contactCards {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    padding: 0 20px;
-
-
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 20px;
 }
 
-/* Left side: Form */
+/* === FORM SECTION === */
 .contactFormCard {
-    /*background-color: #38383859;*/
-    border-radius: 20px;
-    padding: 40px;
-    width: 100%;
-    max-width: 1450px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: transparent; /* optional */
 }
 
-/* Right side: Contact info */
+/* === CONTACT INFO SECTION === */
 .contactCard {
-    max-width: 550px;
-    color: #fff;
-    text-align: left;
+  max-width: 550px;
+  color: #fff;
+  text-align: left;
+  flex: 1 1 100%;
 }
 
 .contactCard h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .contactCard p {
-    font-size: 18px;
-    color: #ffffffb7;
-    line-height: 1.6;
-    margin-bottom: 30px;
+  font-size: 18px;
+  color: #ffffffb7;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-/* Each contact method box */
+/* === CONTACT METHOD BOX === */
 .contactDetailsCard {
-    background-color: #ffffff13;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+  background-color: #ffffff13;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .contactIcon {
-    background-color: #ebb30a2e;
-    border-radius: 10px;
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #ebb30a2e;
+  border-radius: 10px;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactDetailsCard h4 {
-    font-size: 18px;
-    font-weight: 800;
-    text-decoration: underline;
-    margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 .contactDetailsCard ul {
-    font-size: 16px;
-    color: #ffffff;
-    list-style: none;
-    padding: 0;
-    line-height: 1.5;
-    word-break: break-word;
+  font-size: 16px;
+  color: #ffffff;
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+  word-break: break-word;
 }
 
-/* Responsive styles */
+/* === RESPONSIVE === */
+
 @media (max-width: 900px) {
-    .contactDiv h1 {
-        font-size: 24px;
-    }
+  .contactCards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
 
-    .contactDiv p {
-        font-size: 16px;
-    }
+  .contactFormCard,
+  .contactCard {
+    padding: 25px;
+    width: 100%;
+  }
 
-    .contactSubtitle {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
+  .contactCard h1,
+  .contactCard p {
+    text-align: center;
+  }
 
-    .contactCards {
-        flex-direction: column;
+  .contactDetailsCard {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
 
-    }
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
 
-    .contactFormCard,
-    .contactCard {
-        width: 100%;
-        max-width: 100%;
-        padding: 25px;
-    }
+  .contactDetailsCard h4 {
+    font-size: 16px;
+  }
 
-    .contactCard h1,
-    .contactCard p {
-        text-align: center;
-    }
+  .contactDetailsCard ul {
+    font-size: 14px;
+  }
+}
 
-    .contactDetailsCard {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-        width: 100%;
-    }
+/* 🔥 NEW: For small mobile devices like iPhone 12, Pixel 8 */
+@media (max-width: 600px) {
+  .contactDiv h1 {
+    font-size: 22px;
+  }
 
-    .contactIcon {
-        width: 50px;
-        height: 50px;
-        padding: 12px;
-    }
+  .contactDiv p {
+    font-size: 14px;
+  }
 
-    .contactDetailsCard h4 {
-        font-size: 16px;
-    }
+  .contactSubtitle {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
 
-    .contactDetailsCard ul {
-        font-size: 14px;
-    }
+  .contactCards {
+    padding: 0 10px;
+  }
+
+  .contactDetailsCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .contactIcon {
+    margin-bottom: 10px;
+  }
+
+  .contactDetailsCard ul {
+    font-size: 13px;
+  }
 }

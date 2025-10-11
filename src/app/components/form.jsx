@@ -65,7 +65,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className={contacFormStyles.contactform} onSubmit={handleSubmit} id="contactForm">
+    <form className={contacFormStyles.contactform} onSubmit={handleSubmit} id="contactForm" style={{scrollMarginTop :"120px"}}>
       <h2>
         <span className={contacFormStyles.icon}>
           <FontAwesomeIcon
