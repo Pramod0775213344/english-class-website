@@ -155,7 +155,7 @@ export default function ContactForm() {
         {sending ? "Sending..." : "Send Message"}
         <FontAwesomeIcon
           icon={faPaperPlane}
-          style={{ color: "#fff", height: "20px", width: "20px", marginLeft: "30px" }}
+          style={{ color: "#fff", height: "20px", width: "20px", marginLeft: "15px" }}
         />
       </button>
     </form>

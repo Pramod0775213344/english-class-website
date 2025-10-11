@@ -33,10 +33,10 @@ function Hero() {
 
             {/* title section */}
 
-            <h1 className={`${styles.title} ${styles.textAnimation}`}><AnimatedText text="Master English," animationType="typing" /> <AnimatedCard /></h1>
+            <h1 className={`${styles.title} ${styles.textAnimation}`}>Master English,</h1>
 
 
-            <h2 className={`${styles.title2}`}><AnimatedText text="Unlock Your Future" animationType="typing" /><AnimatedCard /></h2>
+            <h2 className={`${styles.title2}`}>Unlock Your Future</h2>
 
             {/* paragraph area */}
             <div className={styles.paragraph}>
@@ -47,8 +47,8 @@ function Hero() {
             {/* button div */}
             <div className={styles.buttonDiv}>
 
-              <button className={styles.startButton} onClick={handleClick}> Start Learning today  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
-              <button className={styles.exploreButton} onClick={handleClickCourse}> <FontAwesomeIcon icon={faPlayCircle} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "29px" }} /> Explore Courses</button>
+              <button className={styles.startButton} onClick={handleClick}> Start Learning today  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
+              <button className={styles.exploreButton} onClick={handleClickCourse}> <FontAwesomeIcon icon={faPlayCircle} style={{ color: "#e1bb0eff", height: "20px", width: "20px", marginRight: "9px" }} /> Explore Courses</button>
             </div>
 
             {/* details section ara */}

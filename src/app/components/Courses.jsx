@@ -42,7 +42,7 @@ function Courses() {
                                 <p style={{ marginTop: "5px" }}><span>Morawaka(Sipone) - Friday | 8.30 AM - 2.00PM</span></p>
                                 <p style={{ marginTop: "5px" }}><span>Matara(Dakuna) - Sunday | 8.30 AM - 2.00PM</span></p>
                                 <p style={{ marginTop: "5px" }}><span>Online Zoom - Mon / Wed / Fri / Sat</span></p>
-                                <button className={styles.courseButton} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                                <button className={styles.courseButton} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
                             </div>
                         </div>
                     </AnimatedCard>
@@ -56,7 +56,7 @@ function Courses() {
                                 <h3>Southwind Saturday English School</h3>
                                 <p>Focus on Speaking, Listening, Reading, and Writing through activities, group work, and real-life practice.</p>
                                 <p style={{ marginTop: "25px" }}><span>Every Saturday from 8.00 AM – 6.00 PM</span></p>
-                                <button className={styles.courseButton} style={{ marginTop: "143px" }} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                                <button className={styles.courseButton} style={{ marginTop: "143px" }} onClick={handleClickContact}>Enroll Now <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
                             </div>
 
                         </div>
@@ -75,13 +75,13 @@ function Courses() {
                             <div className={styles.classCard}>
                                 <h1>Monday Evening Batch</h1>
                                 <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Gampaha - SyZyGy</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Monday - General English 2027</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     3.30 PM - 5.30 PM</h2>
                             </div>
                         </AnimatedCard>
@@ -89,13 +89,13 @@ function Courses() {
                             <div className={styles.classCard}>
                                 <h1>Tuesday Evening Batch</h1>
                                 <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Gampaha - SyZyGy</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Tuseday - General English 2026</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     3.00 PM - 5.00 PM</h2>
                             </div>
                         </AnimatedCard>
@@ -105,13 +105,13 @@ function Courses() {
                             <div className={styles.classCard}>
                                 <h1>Wednesday Evening Batch</h1>
                                 <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Galle - Sipara</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Wednesday - General English 2026/2027</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     2.30 PM - 4.30 PM</h2>
                             </div>
                         </AnimatedCard>
@@ -119,13 +119,13 @@ function Courses() {
                             <div className={styles.classCard}>
                                 <h1>Thursday Online Batch</h1>
                                 <h2>
-                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faMap} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Online - Zoom</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faCalendar} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     Thursday - General English 2026/2027</h2>
                                 <h2>
-                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "29px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
+                                    <FontAwesomeIcon icon={faClock} style={{ color: "#e1bb0eff", marginRight: "9px", backgroundColor: "#e1ba0e39", padding: "15px", borderRadius: "15px" }} />
                                     8.00 PM - 10.00 PM</h2>
                             </div>
                         </AnimatedCard>
@@ -136,7 +136,7 @@ function Courses() {
                 <div className={styles.assessmentDetailsDiv}>
                     <h1>Not sure which course is right for you?</h1>
                     <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
-                    <button className={styles.assessmentButton} onClick={handleClickContact}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "29px" }} /></button>
+                    <button className={styles.assessmentButton} onClick={handleClickContact}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
                 </div>
             </section >
         </div>
