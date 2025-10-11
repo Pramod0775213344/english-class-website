@@ -71,7 +71,7 @@ function Courses() {
                 <div className={styles.mainClassCardDiv}>
                     <div className={styles.classCards}>
 
-                        <AnimatedCard animationType="fadeUp" delay={0.1}>
+                        <AnimatedCard animationType="fadeUp" >
                             <div className={styles.classCard}>
                                 <h1>Monday Evening Batch</h1>
                                 <h2>
@@ -85,7 +85,7 @@ function Courses() {
                                     3.30 PM - 5.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeUp" delay={0.2}>
+                        <AnimatedCard animationType="fadeUp" >
                             <div className={styles.classCard}>
                                 <h1>Tuesday Evening Batch</h1>
                                 <h2>
@@ -99,9 +99,7 @@ function Courses() {
                                     3.00 PM - 5.00 PM</h2>
                             </div>
                         </AnimatedCard>
-                    </div>
-                    <div className={styles.classCards}>
-                        <AnimatedCard animationType="fadeUp" delay={0.3}>
+                        <AnimatedCard animationType="fadeUp">
                             <div className={styles.classCard}>
                                 <h1>Wednesday Evening Batch</h1>
                                 <h2>
@@ -115,7 +113,7 @@ function Courses() {
                                     2.30 PM - 4.30 PM</h2>
                             </div>
                         </AnimatedCard>
-                        <AnimatedCard animationType="fadeUp " delay={0.4}>
+                        <AnimatedCard animationType="fadeUp ">
                             <div className={styles.classCard}>
                                 <h1>Thursday Online Batch</h1>
                                 <h2>

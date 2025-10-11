@@ -9,7 +9,7 @@ import { faFacebook, faLinkedin, faTwitter, faInstagram } from '@fortawesome/fre
 function Footer() {
     return (
         <div>
-            <section>
+            <section className={styles.mainSection}>
                 <div className={styles.footerDiv}>
                     <div className={styles.footerContent}>
                         <div className={styles.logoAndTitle}>
@@ -26,7 +26,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className={styles.footerContent}>
+                    <div className={styles.footerContent} style={{marginBottom:"-135px"}}>
                         <h2>Quick Links</h2>
                         <ul>
                             <li><Link href="#home">Home</Link></li>
@@ -36,7 +36,7 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className={styles.footerContent}>
+                    <div className={styles.footerContent} style={{marginBottom:"-135px"}}>
                         <h2>Visit Our Socials</h2>
                         <ul>
                             <li><FontAwesomeIcon icon={faFacebook} /> Facebook</li>
