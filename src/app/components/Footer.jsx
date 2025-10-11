@@ -17,7 +17,7 @@ function Footer() {
                                 <Image src="/logo3.png" alt="Logo" width={150} height={100} />
                             </div>
                             <div>
-                                <h2>Suranga Senanayake <br /> English Academy</h2>
+                                <h2>Suranga Senanayaka <br /> English Academy</h2>
                                 <p>
                                     Empowering students worldwide with quality English education for over 15 years.
                                     Join our global community and transform your future today.

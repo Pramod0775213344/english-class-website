@@ -19,19 +19,20 @@ function Courses() {
         <div>
             {/* course section */}
             <section id="courses">
-                <div className={styles.coursediv}>
-                    <h4 className={styles.subtitle}>Our Courses</h4>
+                <AnimatedCard animationType="scale">
+                    <div className={styles.coursediv}>
+                        <h4 className={styles.subtitle}>Our Courses</h4>
 
-                    <h1>Choose Your Perfect Course</h1>
-                    <p>From Beginner To Advance levels, We offered specialized English Courses Designed to Meet your Specific goals and learning styles</p>
-                </div>
-
+                        <h1>Choose Your Perfect Course</h1>
+                        <p>From Beginner To Advance levels, We offered specialized English Courses Designed to Meet your Specific goals and learning styles</p>
+                    </div>
+                </AnimatedCard>
                 {/* course cards */}
 
                 <div className={styles.courseCards} >
                     <AnimatedCard animationType="fadeUp">
                         <div className={`${styles.courseCard} ${styles.courseCardOne}`}>
-                        <div>
+                            <div>
                                 <Image src="/course1.jpg" alt="Course 1" width={600} height={400} className={styles.courseImage} />
                             </div>
                             <div>
@@ -49,7 +50,7 @@ function Courses() {
 
                     <AnimatedCard animationType="fadeUp">
                         <div className={`${styles.courseCard} ${styles.courseCardTwo}`}>
-                        <div>
+                            <div>
                                 <Image src="/course2.jpg" alt="Course 1" width={600} height={400} className={styles.courseImage2} />
                             </div>
                             <div>
@@ -65,15 +66,17 @@ function Courses() {
                 </div>
 
                 {/* title general class details */}
-                <h1 className={styles.classesTitle}>General English Classes Details</h1>
-                <p className={styles.classesTitleParagraph}>Enhance your English language skills with our comprehensive courses taught by experienced instructors</p>
+                <AnimatedCard animationType="scale">
+                    <h1 className={styles.classesTitle}>General English Classes Details</h1>
+                    <p className={styles.classesTitleParagraph}>Enhance your English language skills with our comprehensive courses taught by experienced instructors</p>
+                </AnimatedCard>
                 {/* class Cards */}
                 <div className={styles.mainClassCardDiv}>
                     <div className={styles.classCards}>
 
                         <AnimatedCard animationType="fadeUp" >
                             <div className={styles.classCard}>
-                                <Image src='/Class1.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Class1.jpg' alt="class 01" width={1020} height={10} className={styles.cardImage} />
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English 2027 Batch</h3>
                                 </div>
@@ -87,7 +90,7 @@ function Courses() {
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp">
                             <div className={styles.classCard}>
-                                <Image src='/Class1.jpg' alt="class 02" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Class1.jpg' alt="class 02" width={1020} height={10} className={styles.cardImage} />
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English 2026 Batch</h3>
                                 </div>
@@ -101,7 +104,7 @@ function Courses() {
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp">
                             <div className={styles.classCard}>
-                                <Image src='/Class2.jpg' alt="class 03" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Class2.jpg' alt="class 03" width={1020} height={10} className={styles.cardImage} />
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English  Friday Batch</h3>
                                 </div>
@@ -115,7 +118,7 @@ function Courses() {
                         </AnimatedCard>
                         <AnimatedCard animationType="fadeUp ">
                             <div className={styles.classCard}>
-                                <Image src='/Sir.jpg' alt="class 04" width={1020} height={10} className={styles.cardImage}/>
+                                <Image src='/Sir.jpg' alt="class 04" width={1020} height={10} className={styles.cardImage} />
                                 <div className={styles.cardBottomTitle}>
                                     <h3>General English Online Class</h3>
                                 </div>
@@ -131,11 +134,16 @@ function Courses() {
                 </div>
 
                 {/* contact Assessment details */}
-                <div className={styles.assessmentDetailsDiv}>
-                    <h1>Not sure which course is right for you?</h1>
-                    <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
-                    <button className={styles.assessmentButton} onClick={handleClickContact}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
-                </div>
+                <AnimatedCard animationType="scale">
+                    <div className={styles.assessmentDetailsDiv}>
+                         <AnimatedCard animationType="fadeUp " delay={0.2}>
+                        <h1>Not sure which course is right for you?</h1>
+                        <p>Take our free English level assessment and get personalized course recommendations based on your current skills and learning goals</p>
+                        <button className={styles.assessmentButton} onClick={handleClickContact}>Get Free Assessment  <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff", height: "20px", width: "20px", marginLeft: "9px" }} /></button>
+                    </AnimatedCard>
+                    </div>
+
+                </AnimatedCard>
             </section >
         </div>
     )

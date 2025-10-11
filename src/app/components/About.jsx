@@ -12,13 +12,14 @@ function About() {
             {/* about us section */}
             <section style={{ marginTop: "100px" }} id="about">
                 {/* about details div */}
-                <div className={styles.aboutdiv}>
-                    <h4 className={styles.aboutsubtitle}>About us</h4>
+                <AnimatedCard animationType="scale">
+                    <div className={styles.aboutdiv}>
+                        <h4 className={styles.aboutsubtitle}>About us</h4>
 
-                    <h1>Your success is our 15-year legacy</h1>
-                    <p>Since our founding, we've remained committed to a single, powerful idea: that English fluency can transform lives. We achieve this by seamlessly integrating proven teaching  methodologies with innovative technology, creating a learning experience that is both  effective and dynamic. Get ready to achieve your English excellence with a partner you can trust..</p>
-                </div>
-
+                        <h1>Your success is our 15-year legacy</h1>
+                        <p>Since our founding, we've remained committed to a single, powerful idea: that English fluency can transform lives. We achieve this by seamlessly integrating proven teaching  methodologies with innovative technology, creating a learning experience that is both  effective and dynamic. Get ready to achieve your English excellence with a partner you can trust..</p>
+                    </div>
+                </AnimatedCard>
                 {/* about card div */}
                 <div className={styles.aboutCards} >
                     <AnimatedCard animationType="scale">
@@ -43,8 +44,10 @@ function About() {
 
                 {/* about core values */}
                 <div className={styles.coreValueDiv}>
-                    <h2>Our Core Values</h2>
-                    <p>These principles guide everything we do and shape the learning<br></br> experience we create for our students.</p>
+                    <AnimatedCard animationType="scale">
+                        <h2>Our Core Values</h2>
+                        <p>These principles guide everything we do and shape the learning experience we create for our students.</p>
+                    </AnimatedCard>
                     <div className={styles.coreValueCards}>
                         <AnimatedCard animationType="rotate" delay={0.2}>
                             <div className={styles.coreValueCard}>

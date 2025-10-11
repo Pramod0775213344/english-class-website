@@ -33,9 +33,7 @@ function Hero() {
 
             {/* title section */}
 
-            <h1 className={`${styles.title} ${styles.textAnimation}`}>Master English,</h1>
-
-
+            <h1 className={`${styles.title}`}>Master English,</h1>
             <h2 className={`${styles.title2}`}>Unlock Your Future</h2>
 
             {/* paragraph area */}

@@ -12,12 +12,18 @@ function Contact() {
             {/* contact */}
             <section style={{ marginTop: "50px" }} id="contact">
                 <div className={styles.contactDiv}>
-                    <h4 className={styles.contactSubtitle}>Get In Touch</h4>
-                    <h1>Start Your English Journey Today</h1>
-                    <p>
-                        Ready to transform your English skills? Get in touch with our admission team for a free
-                        consultation and personalized course recommendations.
-                    </p>
+                    <AnimatedCard animationType="fadeUp">
+                        <h4 className={styles.contactSubtitle}>Get In Touch</h4>
+                    </AnimatedCard>
+                    <AnimatedCard animationType="fadeUp">
+                        <h1>Start Your English Journey Today</h1>
+                    </AnimatedCard>
+                    <AnimatedCard animationType="fadeUp">
+                        <p>
+                            Ready to transform your English skills? Get in touch with our admission team for a free
+                            consultation and personalized course recommendations.
+                        </p>
+                    </AnimatedCard>
                 </div>
 
                 <div className={styles.contactCards}>
